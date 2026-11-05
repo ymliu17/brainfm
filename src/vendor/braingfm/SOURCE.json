@@ -1,0 +1,10 @@
+{
+  "repository": "https://github.com/weixinxu666/BrainGFM",
+  "commit": "f9739d729d1e3d186486ef8056337867c5fcfcf3",
+  "original_sha256": {
+    "BrainGFM_Gprompt.py": "d7d8cacf8724caaf3ad980e0a809a65f8ae8327fe0ee5719d33b1cdda77dc35d",
+    "graph_prompt.py": "bf374ed8ae82390bf759d42b9183aa22aaa1f57b098051dac0464e00717b3b4e",
+    "disease_names.py": "8f01b0243c1918778e3eccf40c8e4e4bf1e670f3613682ef08708e0fbe30dd61"
+  },
+  "changes": "Relative imports only"
+}

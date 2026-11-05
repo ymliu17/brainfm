@@ -1,0 +1,103 @@
+data:
+  augment_level:
+  - 1
+  - 1
+  - 1
+  - 1
+  buckner_atlas: buckner7
+  buckner_networks: 1
+  buckner_rois: 7
+  channels: all
+  crop_starts: conditional_align
+  datasets:
+  - atlas_creation: online
+    data_path: anon
+    name: ukb
+    raw_signal_length: 180
+    train_subject_ids_path: anon
+  max_crop_distance: 80
+  max_spatial: false
+  min_crop_distance: 0
+  min_spatial: false
+  name: fmri
+  network_map_path: anon
+  number_of_crops: 2
+  patch_size: 20
+  schaefer_atlas: schaefer400
+  schaefer_networks: 7
+  schaefer_rois: 400
+  target_signal_length: 100
+  tian_atlas: tian3
+  tian_networks: 1
+  tian_rois: 50
+  trans_mat_path: anon
+dino:
+  base_teacher_momentum: 0.99
+  coeff: 1
+  use_separate_mask_predictor: false
+masking:
+  canonical_network_masks: false
+  masking_frequency: 0.5
+  masking_ratio:
+  - 0.65
+  - 0.85
+  masking_type: slice
+model:
+  backbone_type: cnn_tf
+  cnn_dim: 768
+  cnn_final_norm: layer
+  depth: 8
+  drop_path_rate: 0.0
+  emb_dropout: 0.0
+  embedding_dim: 768
+  global_pooling: cls
+  heads: 0
+  layer_scale_init_value: 0.1
+  mlp_dim: 0
+  network_masking: false
+  projection_bottleneck_dim: 128
+  projection_hidden_dim: 1024
+  projection_nlayers: 2
+  projection_output_dim: 512
+  tokenizer:
+    config:
+    - depthwise: false
+      kernel_size: 3
+      out_channels: 384
+      type: dense
+    - decay_max: 2.0
+      decay_min: 2.0
+      kernel_size: 4
+      num_scales: 3
+      out_channels: 384
+      type: sgconv
+    final_norm: layer
+    pooling_type: mean
+model_type: simple_dino_tf
+optimizer:
+  base_lr_scale: 0.0007
+  lr_decay_rate: 1.0
+  type: AdamW
+  weight_decay: 0.05
+  weight_decay_end: 0.3
+run_name: spat_seed21
+scheduler:
+  warmup_epochs: 3
+ssl:
+  cls_loss_weight: 1.0
+  mask_loss_weight: 0.5
+  netloss_decay_schedule: cosine
+  netloss_weight_decay_epochs: 5
+  network_loss_weight: 0.5
+training:
+  batch_size: 512
+  checkpoint_interval: 100
+  epochs: 100
+  gradient_accumulation_steps: 1
+  log_interval: 1000
+  num_workers: 8
+  output_dir: ./output
+  resume_checkpoint: null
+  save_model: true
+  seed: 21
+  use_cuda: true

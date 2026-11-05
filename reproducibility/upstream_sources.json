@@ -1,0 +1,5 @@
+[
+  {"repository":"https://github.com/SamGijsen/Brain-Semantoks.git","revision":"547e57effced0156229b8697dd24a0ac67d53a88","destination":"third_party/brain_semantoks"},
+  {"repository":"https://github.com/yuxiangwei0808/fMRI-LM.git","revision":"5d4b425ec6cdde0203028f814be85ea06db5f501","destination":"third_party/fmrilm_2026"},
+  {"repository":"https://github.com/hzlab/Brain-Harmony.git","revision":"453edc18aed68d834401159f81757297d0c5281f","destination":"third_party/brain_harmony"}
+]

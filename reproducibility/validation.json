@@ -1,0 +1,16 @@
+{
+  "snapshot": "2026-11-05",
+  "scope": "code-only repository",
+  "tests": {
+    "passed": 152,
+    "skipped_requires_private_artifacts": 10,
+    "failed": 0
+  },
+  "test_run": "Computational suite from preceding code synchronization; current change removes data and updates local-input handling.",
+  "cohort_data_included": false,
+  "aggregate_results_included": false,
+  "figure_source_data_included": false,
+  "rendered_figures_included": false,
+  "manuscript_included": false,
+  "repository": "https://github.com/ymliu17/brainfm"
+}

@@ -1,0 +1,130 @@
+{
+  "_id": "6aac8c6522252812020d3a4a",
+  "id": "stanjsx/fMRI-LM-B-Qwen3-0.6B",
+  "private": false,
+  "pipeline_tag": "text-generation",
+  "library_name": "pytorch",
+  "tags": [
+    "pytorch",
+    "fmri",
+    "neuroimaging",
+    "brain-decoding",
+    "multimodal",
+    "foundation-model",
+    "qwen3",
+    "text-generation",
+    "arxiv:2511.21760",
+    "region:us"
+  ],
+  "downloads": 0,
+  "likes": 0,
+  "modelId": "stanjsx/fMRI-LM-B-Qwen3-0.6B",
+  "author": "stanjsx",
+  "sha": "1f784444e81d5bd5004d78febb1dd99396843a66",
+  "lastModified": "2026-09-18T13:46:45.000Z",
+  "gated": false,
+  "disabled": false,
+  "widgetData": [
+    {
+      "text": "Hi, what can you help me with?"
+    },
+    {
+      "text": "What is 84 * 3 / 2?"
+    },
+    {
+      "text": "Tell me an interesting fact about the universe!"
+    },
+    {
+      "text": "Explain quantum computing in simple terms."
+    }
+  ],
+  "model-index": null,
+  "config": {},
+  "cardData": {
+    "library_name": "pytorch",
+    "pipeline_tag": "text-generation",
+    "tags": [
+      "fmri",
+      "neuroimaging",
+      "brain-decoding",
+      "multimodal",
+      "foundation-model",
+      "qwen3"
+    ]
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+      "size": 1519
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "b28c9b46ada761bcb311ad8ed21c57b64bfa323e",
+      "size": 2601
+    },
+    {
+      "rfilename": "mae/stage1-tokenizer.pt",
+      "blobId": "6299ee9699b89438b9d2a18709616a88e8c811e2",
+      "size": 761277241,
+      "lfs": {
+        "sha256": "20482494452012e03b2ee20b9db1fcfbf2be3ca8d19a847423eae7178499ef5e",
+        "size": 761277241,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "mae/stage2-pretrain-Qwen3-0.6B.pt",
+      "blobId": "ce8abe90e6537915db9f48bed693c44967072c32",
+      "size": 1370278211,
+      "lfs": {
+        "sha256": "0df6bdfbbce1084ce8552dfe27d3d9485d03d248be6ce0d26ad62c813e4723f4",
+        "size": 1370278211,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "vq-contrastive/stage1-tokenizer.pt",
+      "blobId": "c6602dfed0747c273ee3c91eea893f8c48453a33",
+      "size": 1014925261,
+      "lfs": {
+        "sha256": "241150a30fe9e3c1f9d818851a0a0d789e696f084ac42d82a0bd607008fc2864",
+        "size": 1014925261,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "vq-contrastive/stage2-pretrain-Qwen3-0.6B.pt",
+      "blobId": "ddcf635b8958076bae7c8b733a5598a96ba1d1dd",
+      "size": 1370278211,
+      "lfs": {
+        "sha256": "b90690b8d46047b107c5d35ccd9b5c29f96d1c5a733e2ec9742861fc2e13e4e1",
+        "size": 1370278211,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "vq-domain/stage1-tokenizer.pt",
+      "blobId": "e18a305826187c8710ab2214bb8609b4d8993a63",
+      "size": 1009417675,
+      "lfs": {
+        "sha256": "c590535c19e835f216121f78c71578d35bf71347e558c917776501879df15e8c",
+        "size": 1009417675,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "vq-domain/stage2-pretrain-Qwen3-0.6B.pt",
+      "blobId": "ac100790746b850a8eb2e5d6e37b6f9660d5d80e",
+      "size": 1370278211,
+      "lfs": {
+        "sha256": "542708723fbb4d54e107df503aec8d266534b224f2e46a1213baeac763a99cf5",
+        "size": 1370278211,
+        "pointerSize": 135
+      }
+    }
+  ],
+  "spaces": [],
+  "createdAt": "2026-09-18T00:57:09.000Z",
+  "usedStorage": 21108534690
+}

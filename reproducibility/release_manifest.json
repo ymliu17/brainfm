@@ -1,0 +1,1432 @@
+{
+  "snapshot": "2026-11-05",
+  "repository": "https://github.com/ymliu17/brainfm",
+  "scope": "code and reproduction instructions only; numerical results stored separately",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 113,
+      "sha256": "5e636cfefceb70a913bfd74e47ffbdff45904704b14bbf8116574416bc513daf"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 487,
+      "sha256": "2d245b42b1af3a8e9a4571ea300d669dd8a3d739e105f523ee7e98f23d3b04bb"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4807,
+      "sha256": "f796d34e0348291a8761a8855d7412027652587fab840ae50c0f142469a1dfe5"
+    },
+    {
+      "path": "config/benchmark_scope.json",
+      "bytes": 1425,
+      "sha256": "e58623cff761a9bccd31a45b675d4796af32724770c329ef06ba760845bef993"
+    },
+    {
+      "path": "config/braingfm.json",
+      "bytes": 1121,
+      "sha256": "576f0ed58c42a02c614eeef2b48242be359e278bc070701dc99ac32a1bd10a39"
+    },
+    {
+      "path": "reproducibility/CURRENT_PROTOCOLS.md",
+      "bytes": 6028,
+      "sha256": "4f1ccc6e85cc85a16b5a7bd07e8e4290990414a17ea537e34c1890b14e29893c"
+    },
+    {
+      "path": "reproducibility/DATA_ACCESS.md",
+      "bytes": 2839,
+      "sha256": "7bfbf00bb160e181ef43e4fac1e59fbd3211c650533bda24430df3c3269e2ed7"
+    },
+    {
+      "path": "reproducibility/EXPERIMENTS.md",
+      "bytes": 3909,
+      "sha256": "9415dd81501a3a58679d35bb8c683a0d12c49484df7f564beb2c146009aa070e"
+    },
+    {
+      "path": "reproducibility/FIGURE_DATA.md",
+      "bytes": 3971,
+      "sha256": "737988ad475ecbea284eea1f4ecd80053cfffad8e8be1dc0541af01bda643783"
+    },
+    {
+      "path": "reproducibility/REPRODUCING.md",
+      "bytes": 5724,
+      "sha256": "5826ef29ea43b87e33727ba8b9d192ca0b685ff973516225b8876bf32dd6151f"
+    },
+    {
+      "path": "reproducibility/RESULTS.md",
+      "bytes": 3849,
+      "sha256": "5bd64cc059a678a0a7f21cfa64bccc30d31d5ee9d9dbf695fbd1f76e0c0f6c35"
+    },
+    {
+      "path": "reproducibility/THIRD_PARTY.md",
+      "bytes": 1924,
+      "sha256": "8e4c39c480692998e455c941d3d97626e9aabe1965666929cbae528954080161"
+    },
+    {
+      "path": "reproducibility/code_dependencies.json",
+      "bytes": 59872,
+      "sha256": "d3b6d8e3cc62f11b3cea84db8b9d88135bb81bfbcd274a18670ffb6e9b4694c9"
+    },
+    {
+      "path": "reproducibility/environment-snapshot.txt",
+      "bytes": 1856,
+      "sha256": "1b03cf5164a85c0e80d4d7eed1b75addde95b33c14f517bf311323af506304fe"
+    },
+    {
+      "path": "reproducibility/model_assets/checkpoints__pretrained__braingfm__f9739d729d1e__provenance.json",
+      "bytes": 466,
+      "sha256": "ea40d643a1ff2272480a0233c6ff91f215810511b86b6bafd92e906a6d74708e"
+    },
+    {
+      "path": "reproducibility/model_assets/fmrilm_hf_metadata.json",
+      "bytes": 3435,
+      "sha256": "1f475099bffb4601583ad7a7f49bf24e673679baa1633a9ffac36489b1e8ae0e"
+    },
+    {
+      "path": "reproducibility/model_assets/runs__brainharmonix_f_v1__repository.json",
+      "bytes": 206,
+      "sha256": "a7d5a2b65929a032ee228e54f1941e2f56e3f6ceb629003def6d799141cd542a"
+    },
+    {
+      "path": "reproducibility/model_assets/runs__fmrilm_variants_v1__assets.json",
+      "bytes": 1436,
+      "sha256": "d8b2b346f904b26c94862f44e73dc9d41f7ec32b585ebe1256fc8a700eadde46"
+    },
+    {
+      "path": "reproducibility/model_assets/runs__new_fm_v1__assets.json",
+      "bytes": 2141,
+      "sha256": "7998ac827c968e1a5da4baca466e52a340d5e0b92e33791c87cb79091071bc4c"
+    },
+    {
+      "path": "reproducibility/model_assets/semantoks_hf_metadata.json",
+      "bytes": 2898,
+      "sha256": "6c57183601b7c49de58fd727bbad327b8020a828c4ad5b786d2b6e594350eddc"
+    },
+    {
+      "path": "reproducibility/model_assets/third_party__brain_semantoks__UPSTREAM_REVISION.json",
+      "bytes": 99,
+      "sha256": "a71d0c5841b372ee8475735a5c31e423b886d5455ddad83bd68feea4f4267b65"
+    },
+    {
+      "path": "reproducibility/model_assets/third_party__fmrilm_2026__UPSTREAM_REVISION.json",
+      "bytes": 96,
+      "sha256": "a37fa9a208c37492b26f64d6fe8a74869ed3e2b38d7215bbf26a7b8ffd437c6d"
+    },
+    {
+      "path": "reproducibility/model_configs/brainlm_13m_official/config.json",
+      "bytes": 1094,
+      "sha256": "620920202443279dee05e100a08e7a90f8fb16bb1b5a0850c8c5c59e87b1f5b4"
+    },
+    {
+      "path": "reproducibility/model_configs/brainlm_vitmae_111M/config.json",
+      "bytes": 780,
+      "sha256": "2ec77272e90653dde8acc8c54bdfe384fca99c7d160e464108a4789141382a5a"
+    },
+    {
+      "path": "reproducibility/model_configs/brainlm_vitmae_650M/config.json",
+      "bytes": 782,
+      "sha256": "26460ebf19ccd64b2b4cfa8c0a0268b2041c7ce559cbeea06fa26b9827716070"
+    },
+    {
+      "path": "reproducibility/model_configs/new_fm_v1/fmrilm/qwen_config.json",
+      "bytes": 726,
+      "sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+    },
+    {
+      "path": "reproducibility/model_configs/new_fm_v1/semantoks/config_used.yaml",
+      "bytes": 2065,
+      "sha256": "8ed0e4f49b879f40956799d66b1e8d59f0cf88ba2649034115b36b3d589d3503"
+    },
+    {
+      "path": "reproducibility/upstream_notices/README.md",
+      "bytes": 366,
+      "sha256": "3de386837bb19c870d292e75e524dbc1feee34623015003cb629d99edf5a06d9"
+    },
+    {
+      "path": "reproducibility/upstream_sources.json",
+      "bytes": 489,
+      "sha256": "0e80b844fdfeee59e59ebfcba7f882873f66b37f1a506a0c45d17d410a3f7f65"
+    },
+    {
+      "path": "reproducibility/validation.json",
+      "bytes": 537,
+      "sha256": "2c87d181f54688b12023f4f3f8a6ed14a9839d31943b8f96fe139d9930a464e0"
+    },
+    {
+      "path": "requirements-figures.txt",
+      "bytes": 46,
+      "sha256": "3859c1099065bad8f54963417852a2ac7657d792fb43fdf6d88ee07e530dc4dc"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 418,
+      "sha256": "9d4b37aa0728deb34bfbfafaab6c98af1d87c3fe0898cc7e57bb778f1fcf0881"
+    },
+    {
+      "path": "scripts/benchmark_adapted_fingerprint.py",
+      "bytes": 2301,
+      "sha256": "4accefaa499947395966d2aedc8624ffe6212c50ce4e2cb923ec8a0b82c7c58f"
+    },
+    {
+      "path": "scripts/benchmark_extension.py",
+      "bytes": 22373,
+      "sha256": "d3f8e9746927e8d8c6d4bf5b152de5308c2a44a329a29c052233e518a5a283a1"
+    },
+    {
+      "path": "scripts/benchmark_training_controls.py",
+      "bytes": 6875,
+      "sha256": "91703244f6030ff042387725c4b6264ee95e36eca22f5686c7520bba2ed65338"
+    },
+    {
+      "path": "scripts/brainharmonix_task.py",
+      "bytes": 2953,
+      "sha256": "a6de861e23b09337442992861805f54d539288f7ffcf8c5e2bb01882374bbaa8"
+    },
+    {
+      "path": "scripts/confirm_matched_axis.py",
+      "bytes": 8611,
+      "sha256": "3ce38dc5d2ff68c94dba2aca8e5acf92b9230ebcfb2b4147dae3230022737fc1"
+    },
+    {
+      "path": "scripts/dapt_adni.py",
+      "bytes": 14440,
+      "sha256": "5df2ccc5399c6f3b22caa150b941006d68bc3388b2025ddea8447518a7f5a0b6"
+    },
+    {
+      "path": "scripts/demographic_benchmark.py",
+      "bytes": 1119,
+      "sha256": "f0be73d615dc14c79396d5dc5ac2ba52d7b2acea91ce18727d2d27a78f339a92"
+    },
+    {
+      "path": "scripts/export_legacy_exploratory.py",
+      "bytes": 5041,
+      "sha256": "f3996908aa1442b191a4a306ee960f7b79455267ca31f1d9271ecb20afac148a"
+    },
+    {
+      "path": "scripts/fetch_fmrilm_variants.py",
+      "bytes": 978,
+      "sha256": "4bf7f450d4a46efc91f4cad1c51ba69d007e9d0d9fed532bbda02439c3e0eebf"
+    },
+    {
+      "path": "scripts/fetch_new_fm_assets.py",
+      "bytes": 2532,
+      "sha256": "2151ee19811178a5c75fd6458699e32aecce30440f44553968afdf5c59156ceb"
+    },
+    {
+      "path": "scripts/fetch_upstream_sources.py",
+      "bytes": 1056,
+      "sha256": "dffeca72bba38c5f7ea0a142d2250cc71877276a96a0094c5efa91a9d7274e26"
+    },
+    {
+      "path": "scripts/finetune_adni_probe.py",
+      "bytes": 25596,
+      "sha256": "8e18273a7f7f0d36059ab9de3d26b9788e28ec07404ffee5e43ca626ad979431"
+    },
+    {
+      "path": "scripts/fingerprint_adni.py",
+      "bytes": 12821,
+      "sha256": "063250c4357dfd4784809a2dda5c548df0b618343b13d57a6efd4a24fa8fe213"
+    },
+    {
+      "path": "scripts/fingerprint_adni_matched.py",
+      "bytes": 7737,
+      "sha256": "18fd04bcf2bb8759f3509f6e0a4077807becdce662b92c818e8565960c11e9d6"
+    },
+    {
+      "path": "scripts/fingerprint_rct.py",
+      "bytes": 14703,
+      "sha256": "6286820c3fa142df5d04f96ba6b3e40fa6b9bfeff94a33cf06c9f01b567fa64d"
+    },
+    {
+      "path": "scripts/fit_input_stats.py",
+      "bytes": 4842,
+      "sha256": "bd4664bc4aa6aef87ad158917a67a8e0e09b842839f8c57431e572cd1504673c"
+    },
+    {
+      "path": "scripts/fm_cls_posttraining_v5.py",
+      "bytes": 4083,
+      "sha256": "a4e483bb355bc370519df50ca34cae20ca8132d50310458891e5ca0415db01e3"
+    },
+    {
+      "path": "scripts/fm_matched_supplement.py",
+      "bytes": 1740,
+      "sha256": "cea73ee8c4c7a64ad0ead3943e7cac3e9120d8ef8dea2a0636b4fc25aa96a367"
+    },
+    {
+      "path": "scripts/fm_matched_v3.py",
+      "bytes": 3892,
+      "sha256": "0bed217b739e4d99e7e4352173bc55b270a22def80b7b6a2fe1536b1e831fbaf"
+    },
+    {
+      "path": "scripts/fm_posttraining_matrix.py",
+      "bytes": 7004,
+      "sha256": "1f35085f92aeac578ae654577876ee27d1ad712265287885a9044c1425874b73"
+    },
+    {
+      "path": "scripts/fm_readout_v4.py",
+      "bytes": 2887,
+      "sha256": "e63b55e45f319a3e35b8f522568edc89644950d79d588f95ad6738558a6ac847"
+    },
+    {
+      "path": "scripts/fmrilm_variant_task.py",
+      "bytes": 4155,
+      "sha256": "d3b21ded83f4e49ba6db0f3192fa27c5e0051d023838d5fb512076f860bc2c81"
+    },
+    {
+      "path": "scripts/fusion_increment.py",
+      "bytes": 8077,
+      "sha256": "2b54f7d1fda0f3877395116940b73692449f6a3755bf55338f0cdfd1d474348f"
+    },
+    {
+      "path": "scripts/hrv_ppg_benchmark.py",
+      "bytes": 17245,
+      "sha256": "20950131a4344da4d1b4e47c5cdd2be0a3d1e328dc66f0cc1ea31d4e9d3b44b0"
+    },
+    {
+      "path": "scripts/intervention_prepost.py",
+      "bytes": 22671,
+      "sha256": "acca50117d7a7020bfe9f2c48c5eaa0c6014c8652a3b0a3531c897ddab03465e"
+    },
+    {
+      "path": "scripts/intervention_prepost_inference.py",
+      "bytes": 14368,
+      "sha256": "d222ec0e042f5b663c7b518e967c68584d0cd5114322d524cee27fb6e3637443"
+    },
+    {
+      "path": "scripts/joint_inference.py",
+      "bytes": 35298,
+      "sha256": "e899b9c2db2f4fd14b7cef9dda659c486fab5410b930cab30b7699c6102fda27"
+    },
+    {
+      "path": "scripts/learning_curve.py",
+      "bytes": 6450,
+      "sha256": "3f454d7841f1477e6cf7df5499a2d618ee51497413e0914f85c4718d93ba942c"
+    },
+    {
+      "path": "scripts/make_breathe_labels.py",
+      "bytes": 11553,
+      "sha256": "e5fc50ef148c3909098066e9c33e0c4df7ebedc76ef44a94bf577631434e18ae"
+    },
+    {
+      "path": "scripts/make_labels.py",
+      "bytes": 8825,
+      "sha256": "52db18115367eb70d2f3ed8695293d15d3a4dccaa3c9975124e1e7b3176e23de"
+    },
+    {
+      "path": "scripts/map_act_ids.py",
+      "bytes": 6221,
+      "sha256": "518b5f227761f31a567ea2df17fb1b7a17f566763b17d8316b1614467964adea"
+    },
+    {
+      "path": "scripts/materialize_diagnosis_encoder.py",
+      "bytes": 2247,
+      "sha256": "4ec36026d7d5a233713790ca331350470af2c05accd75a69df7b5a04b05ab317"
+    },
+    {
+      "path": "scripts/materialize_matrix_encoder.py",
+      "bytes": 4504,
+      "sha256": "3d520fac922f637f021fd5ea765e337c2a0b7411693744bc323067311ee161c0"
+    },
+    {
+      "path": "scripts/mci_axis_transfer.py",
+      "bytes": 23672,
+      "sha256": "2a4313a2abad5563a4a7fbada966adb726e7f5c7f1b490a35722f2d3338d999e"
+    },
+    {
+      "path": "scripts/nacc_posttrain.py",
+      "bytes": 8066,
+      "sha256": "f76d78a0217e2cf16afeb2d1641b179c4955284f074add23fcc092728bba3be7"
+    },
+    {
+      "path": "scripts/nacc_posttransfer.py",
+      "bytes": 7794,
+      "sha256": "723933356165b29a02cdcd96f22daede5153de6f22e76e22536e729d62a96a09"
+    },
+    {
+      "path": "scripts/nacc_probe_adapter.py",
+      "bytes": 1278,
+      "sha256": "c77dff0acce091844fb0fab7c7fd2c3afe7f659792b223a3d62e61e580477b3e"
+    },
+    {
+      "path": "scripts/new_fm_benchmark.py",
+      "bytes": 2349,
+      "sha256": "5e5e687f26cd2083598e560df8f9f511b8dfbebe32bb7ee4d43d657b46863979"
+    },
+    {
+      "path": "scripts/paper_completion.py",
+      "bytes": 1625,
+      "sha256": "a65270cba3a8327a42a4e63387abf115339d5f2c9697d669ecab936f79e5e021"
+    },
+    {
+      "path": "scripts/paper_robustness.py",
+      "bytes": 899,
+      "sha256": "7fb29d78213fdb8c48ea51ea4f9b592c8b5ec8545f46b5de483e04a0f21d52b6"
+    },
+    {
+      "path": "scripts/plot_results.py",
+      "bytes": 27248,
+      "sha256": "947397c4642691172375875fd0c54f596bca972c1477a334dcd12ecf84fe4fce"
+    },
+    {
+      "path": "scripts/plot_results_base.py",
+      "bytes": 1200,
+      "sha256": "88992ea5041d02fba1dc177befb51f461cb13b40a51c629efef1a60ee42167d9"
+    },
+    {
+      "path": "scripts/prepare_adni.py",
+      "bytes": 42836,
+      "sha256": "ac1a1696484146494d757a0993eeaae5486f5c9bdaaaf8206fe2d035a3b5ec0f"
+    },
+    {
+      "path": "scripts/prepare_adni_paired.py",
+      "bytes": 13882,
+      "sha256": "963ff478d7cd8dab0b94e252a2010e3c139f6e2570e8489344641bd78715a31d"
+    },
+    {
+      "path": "scripts/prepare_hrv_memory.py",
+      "bytes": 5875,
+      "sha256": "b922db88fb980870d96a3d12ae9bf3ea942e866bfc0ac7ed1f8e4dd92489582b"
+    },
+    {
+      "path": "scripts/prepare_motion_covariates.py",
+      "bytes": 5316,
+      "sha256": "86733679641954767de69372b4468725b255ec20982c515805fbe4654a395114"
+    },
+    {
+      "path": "scripts/prepare_nacc_parity.py",
+      "bytes": 3465,
+      "sha256": "4f4f48dee4342b93c08d8a48fa2dbfef44d9e36c4dcf4d7b7cd2ea13a30b2060"
+    },
+    {
+      "path": "scripts/prepare_nacc_uds.py",
+      "bytes": 3667,
+      "sha256": "b0976b77c7d6440ca15014b3977161ac6f46224043563667544205382b4f4aae"
+    },
+    {
+      "path": "scripts/prepare_psopt.py",
+      "bytes": 9298,
+      "sha256": "e12f2e0857e06fd8fa4097f0b17c720c0905cf2349173ed458a30fae8bdb1a2c"
+    },
+    {
+      "path": "scripts/probe_readouts.py",
+      "bytes": 24270,
+      "sha256": "e13474a4013ea840064b9b246e60ce2cbfc073b36ee4cdb90d4babc511c9c989"
+    },
+    {
+      "path": "scripts/qc_cohort.py",
+      "bytes": 7544,
+      "sha256": "f51616e92d161260a9a067b55717bb93e40ec822bd6b0ac19a2d5ad2ca523c64"
+    },
+    {
+      "path": "scripts/rct_clinical_increment.py",
+      "bytes": 14157,
+      "sha256": "941b5059e301729b8244be210ae2486eed7d920a739c868254971995966b994c"
+    },
+    {
+      "path": "scripts/rct_hrv_trait.py",
+      "bytes": 12048,
+      "sha256": "138233be0d3139ef20dfc11368f23ec4f944cf887f8d0bf4cadb8c5320f85575"
+    },
+    {
+      "path": "scripts/rct_inscanner_hr.py",
+      "bytes": 13210,
+      "sha256": "8f4192ae4a0ccd68ad350ead3804947d7c6e57f15c4f5fc9dbff42dd3ed700b4"
+    },
+    {
+      "path": "scripts/rct_inscanner_patch_hr.py",
+      "bytes": 14440,
+      "sha256": "642a139fdfce0843077bb2e21c7ffd8e97d9f9f5322bd45279f36440aff7425e"
+    },
+    {
+      "path": "scripts/rct_loso.py",
+      "bytes": 13930,
+      "sha256": "5decd97fdb387832465f661a903dadd0a0a7f48fc359915cda6d388832b47d01"
+    },
+    {
+      "path": "scripts/rct_positive_control.py",
+      "bytes": 11826,
+      "sha256": "f303349c9f0f1e589c1803df25f185929162f550b66d7720ef77e7d8d3482d8c"
+    },
+    {
+      "path": "scripts/rct_probe.py",
+      "bytes": 47958,
+      "sha256": "119763fced4c48ffde62768b1707c9e2c2b5f186aa82f1515facd7cf70c34263"
+    },
+    {
+      "path": "scripts/readout_sensitivity.py",
+      "bytes": 807,
+      "sha256": "e6f399da4d49748bf5ad4b7f78caa2cd8881bf9ccece393a30b2aa0a7275985c"
+    },
+    {
+      "path": "scripts/run_adapted_readouts.py",
+      "bytes": 29059,
+      "sha256": "53207fe7cab8729a501a05154a91a7b2f68f2988df0cbca5d3bba3481fddbc44"
+    },
+    {
+      "path": "scripts/run_adapted_readouts_focused.py",
+      "bytes": 9243,
+      "sha256": "83cd0615d0dc12dff5e17550ee48987c2f85841a5e4eb6a412b92659e8c18df2"
+    },
+    {
+      "path": "scripts/run_all_cohort_fd_controls.py",
+      "bytes": 17062,
+      "sha256": "b73c3219ee0c7eefd128a18493815ed4c27b1e2feab9ff0256b59ad5b9c94438"
+    },
+    {
+      "path": "scripts/run_comparator_absolute_nulls.py",
+      "bytes": 14516,
+      "sha256": "3102fc8e8264846d58a2e4a9bb7d0b945a712650b163524e6416b831c4717751"
+    },
+    {
+      "path": "scripts/run_connectivity_readouts.py",
+      "bytes": 29258,
+      "sha256": "b4d7864afa43b2b6ba112f62dc699f94fe4a2f03b26637e0fdea22083d610f3f"
+    },
+    {
+      "path": "scripts/run_diagnosis_posttraining.py",
+      "bytes": 4303,
+      "sha256": "53b522ae41bc7e8aca0c8899a2aaea15d44f90e932a3215bb5407c4c8d186fdb"
+    },
+    {
+      "path": "scripts/run_ecg_frozen_no_usable.py",
+      "bytes": 1875,
+      "sha256": "fc7609a62858db86ab4dbff5f663c2081a4b9ec4a7a0ce877834d388501abe98"
+    },
+    {
+      "path": "scripts/run_evidence_nulls.py",
+      "bytes": 29630,
+      "sha256": "5a402dbbb54ed01de6186930bb1d3ca938acdc90678b0c02efa72a2aca469d5d"
+    },
+    {
+      "path": "scripts/run_external_preliminary.py",
+      "bytes": 19609,
+      "sha256": "9dc41886799d93a8297900d2c542686c8e0bb6f4544bb756dad0cdb7b7d7b5cb"
+    },
+    {
+      "path": "scripts/run_hrv_age_category_comparators.py",
+      "bytes": 7407,
+      "sha256": "be591dd88df59783c502375ea0df62c28e2bed53eab6bcbaa9114570ac49f378"
+    },
+    {
+      "path": "scripts/run_hrv_recall_external.py",
+      "bytes": 5741,
+      "sha256": "9ca49b7f5d9715d57185b7637bbd7a7300b81aa7f74b9eff4a43472155586c0a"
+    },
+    {
+      "path": "scripts/run_hrv_recall_pca_revision.py",
+      "bytes": 19019,
+      "sha256": "ed92a35d05146d1269ce30d45fd5b5a79480231b0a4f20a5b07519da82708ac1"
+    },
+    {
+      "path": "scripts/run_identity_controls.py",
+      "bytes": 23211,
+      "sha256": "2a2b6e1edebabd800bd609e0194c4b9fdcd043870ef4107eb84de426bb8eb1a0"
+    },
+    {
+      "path": "scripts/run_intervention_alignment.py",
+      "bytes": 19248,
+      "sha256": "fc379f813d490964802148da870d7e36faf41e5fb6ce3b072a992b1de7dd154b"
+    },
+    {
+      "path": "scripts/run_intervention_input_length.py",
+      "bytes": 21943,
+      "sha256": "4d46f6566e548d700ecc35f96c6d200aca5657a73c6627a86a0d92d490cb00f3"
+    },
+    {
+      "path": "scripts/run_intervention_readouts.py",
+      "bytes": 15214,
+      "sha256": "755e82a1d588a9f6f7e0c2f973eb7a88309f5c7ff6468fe66c5618a1c85c5c3e"
+    },
+    {
+      "path": "scripts/run_nested_readout_selection.py",
+      "bytes": 11496,
+      "sha256": "0a524dc236e5f0f1d3759c42f9f6f68b30999b00eee5f7be8ce9056f7ad2b6e0"
+    },
+    {
+      "path": "scripts/run_new_fm_physiology.py",
+      "bytes": 6335,
+      "sha256": "5cf94e68456160a66abb9c130c6cb8104d81b7914451bd366e7382afdbd8287f"
+    },
+    {
+      "path": "scripts/run_nine_model_identity_controls.py",
+      "bytes": 29223,
+      "sha256": "4991f76e776450760fe04e13f8dedbae12c74ce72740552a897ba3eae6006fde"
+    },
+    {
+      "path": "scripts/run_physiology_matched.py",
+      "bytes": 5827,
+      "sha256": "38ff838ac8ad5e45284b7cc839f214becc2eebf6abe191d07d68f29360bf692d"
+    },
+    {
+      "path": "scripts/run_posttraining_pca_sensitivity.py",
+      "bytes": 20234,
+      "sha256": "a689912d5cff961ed6a508e4556626b9d0f9d684270ce80b6bbdc69668cd38f0"
+    },
+    {
+      "path": "scripts/run_readout_completion.py",
+      "bytes": 22384,
+      "sha256": "c7823aac62d427f5721a64dc55dd23efb26962949dc9874047df52a993f47bdf"
+    },
+    {
+      "path": "scripts/run_readout_task_extension.py",
+      "bytes": 15068,
+      "sha256": "b1097cec64fdb2db49115de45caba9b24c42c806fa4505b95e109f8ffe522536"
+    },
+    {
+      "path": "scripts/run_reference_comparison_fixed.py",
+      "bytes": 1426,
+      "sha256": "f0ebb86a2e16bb79c877402a3a56c2a8c7be32bd15c2d92f6dfad2bde0215dff"
+    },
+    {
+      "path": "scripts/run_scan_embedding_fd_prediction.py",
+      "bytes": 16330,
+      "sha256": "c53f0aad586b25ff9f12d3264418747aede7e5a67d344785aa0ce1d88f0b73e7"
+    },
+    {
+      "path": "scripts/run_sd_prediction_controls.py",
+      "bytes": 24999,
+      "sha256": "a3605fb176d73ef6dbf577f98844b4d2f9c12f028c6433c949d7df92a50cfd6a"
+    },
+    {
+      "path": "scripts/run_sf100_hrv_recall_axes.py",
+      "bytes": 4968,
+      "sha256": "070a267a274054187d90c17f5b211c0dcafc4b444146d64e430a027615edaca1"
+    },
+    {
+      "path": "scripts/run_sf100_loso.py",
+      "bytes": 8104,
+      "sha256": "55a41d9a7b451715a4c9f9a9d89c5c77655dc923ac9498e6256f03f5ab4e8f46"
+    },
+    {
+      "path": "scripts/run_temporal_order_controls.py",
+      "bytes": 15284,
+      "sha256": "6a7cf3d778bd32654f679f2b618ee1e9d92ae5b7600a033309e83408742984f2"
+    },
+    {
+      "path": "scripts/run_unified_supplements.py",
+      "bytes": 4482,
+      "sha256": "6600418fdf3896d642885378aa6185e893cdf98c99c9d4613a45ca9846f971c5"
+    },
+    {
+      "path": "scripts/sample_alignment.py",
+      "bytes": 1663,
+      "sha256": "b6373da04182867485eebb234068c9a8169c320cea2c82f3eea021cfbd66dcd8"
+    },
+    {
+      "path": "scripts/sf100_benchmark.py",
+      "bytes": 719,
+      "sha256": "24924c1dd73b4851da680a6b76eeb98c475bfe25aac5a88511f387af0b5c196e"
+    },
+    {
+      "path": "scripts/summarize_evidence.py",
+      "bytes": 4052,
+      "sha256": "bb9ac8f373a04b7ae6283d4f5b5ea1e8f89e12f3139d01cfd2c02a0bcafc33aa"
+    },
+    {
+      "path": "scripts/summarize_focused_external_cognition.py",
+      "bytes": 3626,
+      "sha256": "e2597fa3e31280e8f35bce8f975a8a7276de7774b3fd8feff6a2a7bd4ec4d6a0"
+    },
+    {
+      "path": "scripts/summarize_readout_training_cv.py",
+      "bytes": 3114,
+      "sha256": "4ec4566bffdc8dbb4827972edc97e4cabec710f04146aa7bb9de9362cb4098ee"
+    },
+    {
+      "path": "scripts/transfer_baseline.py",
+      "bytes": 13210,
+      "sha256": "4fc4a5f0c8b05519c7fbccb293e2466e0463a46d13d1f637ac6a50341b92b768"
+    },
+    {
+      "path": "scripts/transfer_calibration.py",
+      "bytes": 19917,
+      "sha256": "80b9f3c19d81349f77643afe061f133c27ecc1ca05a9ae6930893906811ef240"
+    },
+    {
+      "path": "scripts/verify_release.py",
+      "bytes": 1368,
+      "sha256": "79a4d0448f486118c96419c182af03220a091071873f07b8489e2c7695d2cbc0"
+    },
+    {
+      "path": "src/__init__.py",
+      "bytes": 71,
+      "sha256": "cd11742e06e64854bc890ff5cfc6640aaaac1651ac37e9b55d299d7057341baf"
+    },
+    {
+      "path": "src/adni_finetune.py",
+      "bytes": 12272,
+      "sha256": "f9275c31088da17ea1a8091bfefd38630d9b8a5903629bf9bf9037ce5e598775"
+    },
+    {
+      "path": "src/adni_folds.py",
+      "bytes": 7788,
+      "sha256": "419c41939fd4bfb317afe56d40cf3c99bda12b1f83d2e908d759a9e1cacdf888"
+    },
+    {
+      "path": "src/baselines/__init__.py",
+      "bytes": 517,
+      "sha256": "8ff13b6b6901fc8929d2eaf9f06bcef56160a4268045df380ca557510e39b3e7"
+    },
+    {
+      "path": "src/baselines/fc_features.py",
+      "bytes": 3571,
+      "sha256": "55c4cea204e5a62f99453b3d9e71947f8a4985e256ff04d6f518142874da854c"
+    },
+    {
+      "path": "src/benchmark_completion_tasks.py",
+      "bytes": 21903,
+      "sha256": "1aa9d8f03e5a063bfbc58b062f63f6f304ee67c25251d13d35dceb2accc7b5f6"
+    },
+    {
+      "path": "src/benchmark_evaluation.py",
+      "bytes": 6955,
+      "sha256": "44514163b4db09ce086fbe4f2fdd738e7976026a86ffd4116890d66e34d78a68"
+    },
+    {
+      "path": "src/benchmark_gap_tasks.py",
+      "bytes": 15173,
+      "sha256": "654183f8a29628651c16f2ab779fea7d721dad590c4d6f869c201aa40bd4886c"
+    },
+    {
+      "path": "src/benchmark_gpu_lock.py",
+      "bytes": 419,
+      "sha256": "92ae05257c78c8bb833bd94b29704dad4be419e57223f5226a648d3274c24602"
+    },
+    {
+      "path": "src/benchmark_gpu_phase.py",
+      "bytes": 6315,
+      "sha256": "dd8bc68d835444ade961def33e6c3680275486feec2e94f6d73abddf63bf5843"
+    },
+    {
+      "path": "src/braingfm.py",
+      "bytes": 5213,
+      "sha256": "fe0f5bd61e32ed4cb31069aa17cdce33a1754093a60011a9c5d1b9319685a977"
+    },
+    {
+      "path": "src/brainharmonix/__init__.py",
+      "bytes": 89,
+      "sha256": "f49bcd4b3bf70987b96869a24b6949358348ffd5a0dcbb4600e87099fe808389"
+    },
+    {
+      "path": "src/brainharmonix/data.py",
+      "bytes": 4631,
+      "sha256": "87ca6deddd9ba85104f7af278ddd5bf8ce6dc0b27e184d8fbedbfe88f5120960"
+    },
+    {
+      "path": "src/brainharmonix/evaluate.py",
+      "bytes": 11168,
+      "sha256": "94983cfcd1f6f765d0878155847171c5a609222d2aae26899bd88b8c31eacc2b"
+    },
+    {
+      "path": "src/brainharmonix/extract.py",
+      "bytes": 3700,
+      "sha256": "ee5709c4e15f130bf25bc33c7052c454851cbf26c68f0a10ea94fff91cb4cbdf"
+    },
+    {
+      "path": "src/brainharmonix/models.py",
+      "bytes": 7819,
+      "sha256": "9ed8cdd110500c2633c7aa418d24249800fba6b0f08b81fc91bb7c2db40b9c16"
+    },
+    {
+      "path": "src/brainharmonix/physiology.py",
+      "bytes": 15053,
+      "sha256": "2ce1d83bac84c1a830a7ffbe3be3c2bf35e1df836c869e0e29b922122648f3c4"
+    },
+    {
+      "path": "src/brainharmonix/references.py",
+      "bytes": 3512,
+      "sha256": "5f0e2f00c39eddc9eea4c64368cd0a54f2279588492fe9349e1b8db279e20d38"
+    },
+    {
+      "path": "src/brainharmonix/report.py",
+      "bytes": 18818,
+      "sha256": "ca452ff469ab8477c71b9709d8ef535369845ffa9291a8f92ad2cb25afd31cd5"
+    },
+    {
+      "path": "src/brainharmonix/sensitivity.py",
+      "bytes": 5795,
+      "sha256": "56752bac6d42aed2e04e2ffabbfb593cf4e7fa78205e8534284bb370ffda6d4d"
+    },
+    {
+      "path": "src/brainharmonix/tasks.py",
+      "bytes": 11519,
+      "sha256": "006d4c57310f752457bd549a104fecaf680989d16ba6eb999ee7ae4baf5d90e7"
+    },
+    {
+      "path": "src/brainharmonix/train.py",
+      "bytes": 4520,
+      "sha256": "aa40c919eaca97a023d9d6af5cdae8246478f9f9862afa4031adff385feece44"
+    },
+    {
+      "path": "src/brainjepa.py",
+      "bytes": 11820,
+      "sha256": "f1719a58a45bd3e9035b6c051e2888319cb47a18bc11ae36e68267d25671a627"
+    },
+    {
+      "path": "src/brainjepa_official/README.md",
+      "bytes": 2879,
+      "sha256": "08988e5f5a54a3c3177bd84bed5403626e34392a92ad40fb76f1eec537e727ba"
+    },
+    {
+      "path": "src/brainjepa_official/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/brainjepa_official/downstream/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/brainjepa_official/downstream/models_vit.py",
+      "bytes": 3349,
+      "sha256": "4422e59fc68d027840e785cb69e82a866133312305baf1f10b788e5da675cf18"
+    },
+    {
+      "path": "src/brainjepa_official/helper.py",
+      "bytes": 5208,
+      "sha256": "c847dc3ad4455859f278d21562042b6699206e25d0d2b8af211622ec15b8ab45"
+    },
+    {
+      "path": "src/brainjepa_official/masks/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/brainjepa_official/masks/utils.py",
+      "bytes": 594,
+      "sha256": "91a8e128e4a80746c2bd78efd8bdd964f85139f1780510f5c1d97b859c005352"
+    },
+    {
+      "path": "src/brainjepa_official/models/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/brainjepa_official/models/vision_transformer.py",
+      "bytes": 20443,
+      "sha256": "74d1b7fcab60206e883ecc5bb6c881147fb9683f0a268154f13b41c9ee105e57"
+    },
+    {
+      "path": "src/brainjepa_official/utils/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/brainjepa_official/utils/schedulers.py",
+      "bytes": 2122,
+      "sha256": "88b492f0172f5c211240f633127cf1b1f68eeb594b815143e136f4008bfca77b"
+    },
+    {
+      "path": "src/brainjepa_official/utils/tensors.py",
+      "bytes": 2207,
+      "sha256": "01f775b02c9335f971e48270c846288f6eb3b38afc778fd26ee5758079b09539"
+    },
+    {
+      "path": "src/brainlm_input.py",
+      "bytes": 10579,
+      "sha256": "a15ea631695e183c152e8f647f5f532cc231f11a9dd4bd3ef47bdae1648953a6"
+    },
+    {
+      "path": "src/brainlm_mae/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/brainlm_mae/configuration_brainlm.py",
+      "bytes": 6345,
+      "sha256": "41a0f6a8a5e42a45d7f8e9daed64d207f9b19afea0d33686bcff1260ccb320e8"
+    },
+    {
+      "path": "src/brainlm_mae/fast_attention.py",
+      "bytes": 4458,
+      "sha256": "130f9d98241c1ff6de1e6dd01ac5fbb83ec3082d1dd5dde875ecdebfb3cdfab5"
+    },
+    {
+      "path": "src/brainlm_mae/modeling_brainlm.py",
+      "bytes": 26236,
+      "sha256": "152c4fe60be69d04832d5b8538b9457728d937ae8a584a9d2c17cdb53812ffc8"
+    },
+    {
+      "path": "src/brainlm_mae/modeling_vit_mae_with_padding.py",
+      "bytes": 48567,
+      "sha256": "6e991dfe6ca1ca0dc6ee691693ca0cebb8cb361f9b4cbe8b965caa86640245fb"
+    },
+    {
+      "path": "src/checkpoint_selection.py",
+      "bytes": 3685,
+      "sha256": "1570682320ead323a0fd5ff18b3c7dd88c38e871cd22f2785adce8979a2f7f7b"
+    },
+    {
+      "path": "src/classifiers.py",
+      "bytes": 8499,
+      "sha256": "6890b9d9945766c91b7c5f4e8adde75a40ddd3e4c82ffbcd102df4179eb84ed1"
+    },
+    {
+      "path": "src/cohorts.py",
+      "bytes": 19555,
+      "sha256": "016513f6b8ddbcfd59588420276332fc4003e7b4620f7a2e90f265c985e1b911"
+    },
+    {
+      "path": "src/config.py",
+      "bytes": 4510,
+      "sha256": "62ebfe8dcdfa3e51fecf70e5b5ae036176f30a525e5d9c6722508f4b6305615a"
+    },
+    {
+      "path": "src/datasets.py",
+      "bytes": 6442,
+      "sha256": "5d393a1b7598d9a92768e8eac512847c161a5114a6dde1e70d068c1c8b4e425e"
+    },
+    {
+      "path": "src/demographic_benchmark.py",
+      "bytes": 14671,
+      "sha256": "bdbddc9b49f30f665da9fbcc5d72ee4b330a56358582cc2486e6bc66a82fabb9"
+    },
+    {
+      "path": "src/diagnosis_posttraining.py",
+      "bytes": 14038,
+      "sha256": "6abd18a63e03cb4da335393f690aefb3e465294646e49ef4a095616e5228bf1d"
+    },
+    {
+      "path": "src/ecg_frozen_no_usable.py",
+      "bytes": 15307,
+      "sha256": "671c2a44a711e3f2edbbce7590e889478aba8deb3d2f821ab7e74b5e4f3df5ae"
+    },
+    {
+      "path": "src/embedding_harmonization.py",
+      "bytes": 15800,
+      "sha256": "3d0ba02e8c261a8d822b4921641fe53a0c2aa5278e8543b193ae9f5b053f7dbe"
+    },
+    {
+      "path": "src/fm_cls_v5/__init__.py",
+      "bytes": 85,
+      "sha256": "1df3ac92912f245c4db836c5b0203dd4af4adf6e644206c1a4500ff1f5ca497d"
+    },
+    {
+      "path": "src/fm_cls_v5/data.py",
+      "bytes": 933,
+      "sha256": "440e14178f1e3d4774c0ee1cf4e2b8046a161a2f963bd4e47c0177641e577546"
+    },
+    {
+      "path": "src/fm_cls_v5/evaluate.py",
+      "bytes": 13281,
+      "sha256": "937c09a7ca765bbd014872d7ceaa0b9247f1904504c99bf787fd43735db93e68"
+    },
+    {
+      "path": "src/fm_cls_v5/models.py",
+      "bytes": 842,
+      "sha256": "d328caa95b73cf5247c7c68e61b8bd3820d055fd73146cea3e94a29c8ac27418"
+    },
+    {
+      "path": "src/fm_cls_v5/report.py",
+      "bytes": 4695,
+      "sha256": "2f6b73d4e423bf3fdc1f89a5149791d5029c2ae2f67058ab74d1b8d23120b510"
+    },
+    {
+      "path": "src/fm_cls_v5/supplement.py",
+      "bytes": 8068,
+      "sha256": "329a55378cd9f1552da6b2dcdf4d11e6d94852ec31b6fef64880dd4bad04afc1"
+    },
+    {
+      "path": "src/fm_cls_v5/train.py",
+      "bytes": 6627,
+      "sha256": "5381c20b3f70d69476c72770abd31269ba54cbf9a2c3a0a250f4430006655891"
+    },
+    {
+      "path": "src/fm_matched_v3/__init__.py",
+      "bytes": 76,
+      "sha256": "cb0e001f621c7d7edc9e9cb9f7b9d627c13cab1c385ec36b0b3cb5d230b496cc"
+    },
+    {
+      "path": "src/fm_matched_v3/data.py",
+      "bytes": 9071,
+      "sha256": "7b3ac92235d25ee8acf0903b81a8446ef145f94327bae0116766425b720d5701"
+    },
+    {
+      "path": "src/fm_matched_v3/diagnosis.py",
+      "bytes": 12585,
+      "sha256": "c0c54bfa237b950f0fb94d3bffcb30ba2975c418a84eab2ffa3a7ad95fc9d9cd"
+    },
+    {
+      "path": "src/fm_matched_v3/evaluate.py",
+      "bytes": 12616,
+      "sha256": "6b43fa3ddba76add1d6a8727e38a0b2bcec9dfea16a57bdb28fe9a0b3a0aae64"
+    },
+    {
+      "path": "src/fm_matched_v3/intervention_physiology.py",
+      "bytes": 4083,
+      "sha256": "8c9da3ad7d63862b706c3c613c7a14a758bd69884863b2e6b54e43b8ba031616"
+    },
+    {
+      "path": "src/fm_matched_v3/models.py",
+      "bytes": 3361,
+      "sha256": "59142a98a007d3af6f18f58f6f952df72accf4774268873140438f551816548d"
+    },
+    {
+      "path": "src/fm_matched_v3/physiology.py",
+      "bytes": 23332,
+      "sha256": "ed83093edbcaafd1253aa7a78766891c109d0923566dda275cf2c09959134dd5"
+    },
+    {
+      "path": "src/fm_matched_v3/probes.py",
+      "bytes": 3245,
+      "sha256": "76080e2da84ae683225e1e0835ab0a82aa34f8b01a645932e0843fecdbcac2d8"
+    },
+    {
+      "path": "src/fm_matched_v3/supplement.py",
+      "bytes": 11427,
+      "sha256": "db23235e72649928880df8766c71815a2cfa909abb87000624d495989feb1d3d"
+    },
+    {
+      "path": "src/fm_matched_v3/train.py",
+      "bytes": 11251,
+      "sha256": "e9bc3bf2a013243da61d8a331ccd25690888431ec05c3fc0c48a44772769deba"
+    },
+    {
+      "path": "src/fm_matrix/__init__.py",
+      "bytes": 77,
+      "sha256": "1a1b9785c448be8790cbcefa0ada6ab1de1e9860aaa3f23c2c3d5d8fe9402d94"
+    },
+    {
+      "path": "src/fm_matrix/data.py",
+      "bytes": 8861,
+      "sha256": "2615b83d68d794410765e75eb1114bef2abe409c4f29843cbc24e740ae75bf65"
+    },
+    {
+      "path": "src/fm_matrix/evaluate.py",
+      "bytes": 16089,
+      "sha256": "9dfa698209f8d5ffe0ccc6c3a8de41b1abfba25af66d80fa745e1c49ee031c02"
+    },
+    {
+      "path": "src/fm_matrix/models.py",
+      "bytes": 11320,
+      "sha256": "c9c438e6050521b17a3f559b760631d441fe2a6fbecedca868ebfad3e5f64a13"
+    },
+    {
+      "path": "src/fm_matrix/train.py",
+      "bytes": 11243,
+      "sha256": "ffc9792b0bd238d1f991d2ca03e7a94cb2c9d1f88094b99051ab89b862f2975a"
+    },
+    {
+      "path": "src/fm_readout_v4/__init__.py",
+      "bytes": 81,
+      "sha256": "4eeb18778cc4d5b87b38559a2cba46bdd39be488e3ae4aac8a7d9876ab2fb9cf"
+    },
+    {
+      "path": "src/fm_readout_v4/data.py",
+      "bytes": 414,
+      "sha256": "86faf2f947fa9a93dd69d8d20e818507e12a78107261af6686cb0c3befd6f361"
+    },
+    {
+      "path": "src/fm_readout_v4/evaluate.py",
+      "bytes": 13351,
+      "sha256": "d737b420ab60f023a104c49790fe8599bc21c0897662b246d162b9cd4ffc54c1"
+    },
+    {
+      "path": "src/fm_readout_v4/models.py",
+      "bytes": 1320,
+      "sha256": "9561b1f3e2c3d2d979928c942ecbe2c04ace409e8a574a37f0e08774ee059c57"
+    },
+    {
+      "path": "src/fm_readout_v4/supplement.py",
+      "bytes": 8080,
+      "sha256": "de205dc7fa37ce03c6793185b106ea79a5291d6e1c438286173ba712f25ecf29"
+    },
+    {
+      "path": "src/fmrilm.py",
+      "bytes": 7963,
+      "sha256": "642c624041f1afd64af1cdfb690baaba73883ebc50aea221b16c231cbcd4c502"
+    },
+    {
+      "path": "src/fmrilm_variants/__init__.py",
+      "bytes": 85,
+      "sha256": "6df794e579f60933e14466b947227812f724904ca18cf97fec17f76257ae1246"
+    },
+    {
+      "path": "src/fmrilm_variants/models.py",
+      "bytes": 7695,
+      "sha256": "7e675ed70d655692b75d87e74fc94c4ab67b07c04662f066d3cb9eb7896512fb"
+    },
+    {
+      "path": "src/fmrilm_variants/runtime.py",
+      "bytes": 1469,
+      "sha256": "0de8dc1ad9c730caab33514854f078398e803967da055409b1c8a8bb67d62c83"
+    },
+    {
+      "path": "src/model_input_protocol.py",
+      "bytes": 1989,
+      "sha256": "79e3cc15321dccc451f8ed92100782704e8f692e37e5889cd1c668b8da6c972a"
+    },
+    {
+      "path": "src/model_loader.py",
+      "bytes": 6627,
+      "sha256": "66991948fe6c610f4e1996d693213af4e673af813a08bc85cc7c1fc7c72027fc"
+    },
+    {
+      "path": "src/motion_covariates.py",
+      "bytes": 5850,
+      "sha256": "a0efb55b2b57cc0b04d96348d8ff33116e3435ad3d882d816d89eff6b297c820"
+    },
+    {
+      "path": "src/new_fm/__init__.py",
+      "bytes": 86,
+      "sha256": "28da0e91036bc2d469f9efb421cb4ecb5cf9d007420e4cf07d3f8259d5551d72"
+    },
+    {
+      "path": "src/new_fm/data.py",
+      "bytes": 8259,
+      "sha256": "abf11b9329cc5985d72fad0a2208cca612cd96dbeb2eff97184ee50f7c57a52c"
+    },
+    {
+      "path": "src/new_fm/evaluate.py",
+      "bytes": 11154,
+      "sha256": "48aa238015845d37afe7553feb8c277a684fdd778b32000b1cba392464b78500"
+    },
+    {
+      "path": "src/new_fm/extract.py",
+      "bytes": 3732,
+      "sha256": "dd10286eabbbf1b1b026b34c2f62a581c190cfaadff5ec4c3b4cbccac14eaa5b"
+    },
+    {
+      "path": "src/new_fm/models.py",
+      "bytes": 12630,
+      "sha256": "db107ad7ad36de3f53397f54b9df38190dd2ba2c033e99af456f3f9855421c88"
+    },
+    {
+      "path": "src/new_fm/physiology.py",
+      "bytes": 18061,
+      "sha256": "fdfc78aee21cac24c02c25b5e037aa322fd7e22929feda801d80aba27da790ff"
+    },
+    {
+      "path": "src/new_fm/report.py",
+      "bytes": 18807,
+      "sha256": "63d5f8dcf1d99cd6837169bc91122c29915f2a010c09153b108fa379bbd985aa"
+    },
+    {
+      "path": "src/new_fm/sensitivity.py",
+      "bytes": 5905,
+      "sha256": "493ccf2c5918cf6d42faeaee58038098a7dfa1588c4a6949ad5bbdbf5e436bd5"
+    },
+    {
+      "path": "src/new_fm/train.py",
+      "bytes": 4519,
+      "sha256": "afdc3920c700548116a875002caaa0c7911e4f1a7eca7c0b0fd7e5eb333c5d2d"
+    },
+    {
+      "path": "src/paper_completion.py",
+      "bytes": 26019,
+      "sha256": "06e5496b3d98d4267212e4a70fc61321acd780c35bc65cb341e63ad7e4478dd5"
+    },
+    {
+      "path": "src/paper_paired_stats.py",
+      "bytes": 5342,
+      "sha256": "ed8b86100536be0e9bb028db650bc416211928bd4ddb686764006c483fa319e3"
+    },
+    {
+      "path": "src/paper_robustness.py",
+      "bytes": 25198,
+      "sha256": "5c962f1c73164e88043207d622c50ea09ece9c86ea865ad1fc184192d640781b"
+    },
+    {
+      "path": "src/paper_task_expansion.py",
+      "bytes": 19855,
+      "sha256": "6f482a46e7ef0333594fd9efd398ef0c2966f580a7f55390ecb4c46ed6891654"
+    },
+    {
+      "path": "src/paths.py",
+      "bytes": 24787,
+      "sha256": "2fe909bf4ea80538dae3c2cfbf64b7dba085a2c8f1a18ecdc0aa1376d9799db3"
+    },
+    {
+      "path": "src/physiology_benchmark.py",
+      "bytes": 23302,
+      "sha256": "97acb91f0895704f912f470b9c9021f2ffba0bc864cf6baf6315e213f69df498"
+    },
+    {
+      "path": "src/protocol.py",
+      "bytes": 10755,
+      "sha256": "98473f083dce139a70aefb029658f80efdf8a5bd3f28a701ac164098af86af01"
+    },
+    {
+      "path": "src/qc.py",
+      "bytes": 5415,
+      "sha256": "e3d4bc4db94627def3bb3e0fc9c9e79252e654fbd7c1e899f27adc95abb8d686"
+    },
+    {
+      "path": "src/readout_control_encoders.py",
+      "bytes": 9118,
+      "sha256": "7181db32368c6b008407462820a4ae3b93d1e7309fd757c6b1a2050570291065"
+    },
+    {
+      "path": "src/readout_sensitivity.py",
+      "bytes": 16114,
+      "sha256": "912e51f971f9d06846289e5db5dc93747f791391284b55442c22c1ee5aa5648c"
+    },
+    {
+      "path": "src/reviewer_completion_tasks.py",
+      "bytes": 27717,
+      "sha256": "6e2693c786a13749d0ce17bcb0e6d164075e6440761ea286f3d2bd1937870cb0"
+    },
+    {
+      "path": "src/roi_signal_qc.py",
+      "bytes": 1186,
+      "sha256": "b5db093ef434d0b3b44d3ebf30fe728229b58310d653bfb484697ed708187448"
+    },
+    {
+      "path": "src/sample_alignment.py",
+      "bytes": 15013,
+      "sha256": "f589b39af6dbf8f2daa5e98fff47c3c96f53f714c6662e974109fec81ce24bc8"
+    },
+    {
+      "path": "src/sf100_benchmark.py",
+      "bytes": 18475,
+      "sha256": "021d47f1291fa29d7ec817018ddf299743be531d71ca1f510bfe8248c1d4b604"
+    },
+    {
+      "path": "src/temporal.py",
+      "bytes": 8145,
+      "sha256": "0e19a78f7c1559ee53636b1e547cc749d2e9d34ee10c89804e5498d17c5c310b"
+    },
+    {
+      "path": "src/thirdorder.py",
+      "bytes": 7749,
+      "sha256": "0e6f61c8f7c14cd8ba6420881b057a3f475de28772629c7ae7c2c7c065ef7671"
+    },
+    {
+      "path": "src/toolkit/atlases/A424_Coordinates.dat",
+      "bytes": 6236,
+      "sha256": "cdad8f8859c211b1400211ebbad455dedcc4399ac14fd614354fb71b110c892c"
+    },
+    {
+      "path": "src/toolkit/atlases/Schaefer2018_400Parcels_17Networks_order_FSLMNI152_2mm.Centroid_RAS.csv",
+      "bytes": 17379,
+      "sha256": "bb0c179497da581eb39f59d62b3c1fc1025717847f48e7fad351c0008650b04b"
+    },
+    {
+      "path": "src/toolkit/atlases/Schaefer400Tian_S3_Coordinates.dat",
+      "bytes": 6157,
+      "sha256": "5a1043caafae27c8909e52343e2a78de152b4ea4fca8681ab6272e10acdcf059"
+    },
+    {
+      "path": "src/toolkit/atlases/Tian_Subcortex_S3_3T_label.txt",
+      "bytes": 533,
+      "sha256": "66f0415163459e4b9e8524efeff138b8889a04f635c6e053f663c93fbacb215d"
+    },
+    {
+      "path": "src/unified_supplements.py",
+      "bytes": 8834,
+      "sha256": "1fba259bb4f6025b2e410fe92e7a5d1180d8c1e887242406b12cacb16aa35f16"
+    },
+    {
+      "path": "src/vendor/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/vendor/braingfm/BrainGFM_Gprompt.py",
+      "bytes": 22363,
+      "sha256": "054b1187da6e17239c236ba3c9b51f8749160653ea23771876a554ae9e076a2f"
+    },
+    {
+      "path": "src/vendor/braingfm/SOURCE.json",
+      "bytes": 460,
+      "sha256": "bb479b77d47339df2ea8d0095ec363dd762ffc42402946100220c03a4cb02afa"
+    },
+    {
+      "path": "src/vendor/braingfm/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/vendor/braingfm/disease_names.py",
+      "bytes": 906,
+      "sha256": "8f01b0243c1918778e3eccf40c8e4e4bf1e670f3613682ef08708e0fbe30dd61"
+    },
+    {
+      "path": "src/vendor/braingfm/graph_prompt.py",
+      "bytes": 7275,
+      "sha256": "bf374ed8ae82390bf759d42b9183aa22aaa1f57b098051dac0464e00717b3b4e"
+    },
+    {
+      "path": "src/vitmae_input.py",
+      "bytes": 5223,
+      "sha256": "817aba31e7e9b76707bfd30f0a4ed852b1b663a9102a258b4759dada9632bc41"
+    },
+    {
+      "path": "tests/test_adapted_readouts.py",
+      "bytes": 2069,
+      "sha256": "d0d70606cb56786d522667c6ed5d399f43d2b85ee66f94146feda7eaf2d831de"
+    },
+    {
+      "path": "tests/test_adapted_readouts_focused.py",
+      "bytes": 3346,
+      "sha256": "aedbdfea75cb3df11bca7d7b89b01dd27c479dab5c8812efdc61a0cceb21436c"
+    },
+    {
+      "path": "tests/test_benchmark_evaluation.py",
+      "bytes": 4981,
+      "sha256": "4ffe0b5cb7d3ef2cf54e420957393b9300b799e7562e34c9aa1b933b4e3a99fa"
+    },
+    {
+      "path": "tests/test_checkpoint_selection.py",
+      "bytes": 4167,
+      "sha256": "ad8401669e68773b1170327fe6ad0aa4393bbc94ee45c5a3f880a31ccc08c6e1"
+    },
+    {
+      "path": "tests/test_connectivity_readouts.py",
+      "bytes": 2290,
+      "sha256": "fd1277f5c94712c3d484ccd6b249dec2c61a4df9bef6a5e83e3509ad42213a0b"
+    },
+    {
+      "path": "tests/test_diagnosis_posttraining.py",
+      "bytes": 5693,
+      "sha256": "b44b834b209d28a0adaac4fdda9f4eb5fde13e2b34d29a6f2fb16de1c24a0f3b"
+    },
+    {
+      "path": "tests/test_embedding_harmonization.py",
+      "bytes": 1303,
+      "sha256": "445f90bfe9198f3c4e902f651c17b68bba962ffee5f64e74a9d356e6612c1564"
+    },
+    {
+      "path": "tests/test_evidence_nulls.py",
+      "bytes": 2972,
+      "sha256": "528b75e4147f3e94d2a7b3d4c4594ffaa9fe11e3416441ced8c685939f5564c8"
+    },
+    {
+      "path": "tests/test_external_preliminary.py",
+      "bytes": 1842,
+      "sha256": "49d56941bb60ad9697d2e539099f6dc8114b49a4b2ff3f5d51ac983ef314df5e"
+    },
+    {
+      "path": "tests/test_intervention_alignment.py",
+      "bytes": 1677,
+      "sha256": "6cc108b1295396d5a7c8b1246f483e929ef9a12083162eb43679029822ef17db"
+    },
+    {
+      "path": "tests/test_intervention_input_length.py",
+      "bytes": 1259,
+      "sha256": "ffa5a192b21c1c2ce8d9b2651674edaf7e70f89e74451b0e4f2fb600474af5ac"
+    },
+    {
+      "path": "tests/test_intervention_prepost.py",
+      "bytes": 2265,
+      "sha256": "2225595ff1553770be928e50c9173dc25e93c39d32222294b5cf00580cb4e25e"
+    },
+    {
+      "path": "tests/test_intervention_prepost_inference.py",
+      "bytes": 2629,
+      "sha256": "f6664cffeebc8e979800ce48da03d2c6d4401588448d5a046cb391f06cd6363a"
+    },
+    {
+      "path": "tests/test_intervention_readouts.py",
+      "bytes": 1526,
+      "sha256": "a461184869562d894771db8e206199e6d758f3ae31b1f5eda45a02c0535336a0"
+    },
+    {
+      "path": "tests/test_matched_supplement.py",
+      "bytes": 2951,
+      "sha256": "b44f2143f4daa2df9af003e24f2b8ebb8d5efe7e6a1dd72b58f4c804947e9a4c"
+    },
+    {
+      "path": "tests/test_matched_v3.py",
+      "bytes": 4402,
+      "sha256": "bfc6c9d65bc329cfe32c64765df9a77d48dbe655481b46e587e37acfca8182b1"
+    },
+    {
+      "path": "tests/test_model_input_protocol.py",
+      "bytes": 1469,
+      "sha256": "fe69b84c36ac3aecd5753ca127dd6d44e9b0e63c0c0848a67856af9ab204ff0b"
+    },
+    {
+      "path": "tests/test_motion_covariates.py",
+      "bytes": 2672,
+      "sha256": "45490b7fd45d20d99148b9d6da5906ce45ebefae79a344ffdd6cfc6784e2a949"
+    },
+    {
+      "path": "tests/test_nacc_uds.py",
+      "bytes": 1275,
+      "sha256": "a1d551219d0743d06a940df1f470d6e6ecd903d0a08717f826c1eca1c18af644"
+    },
+    {
+      "path": "tests/test_new_fm_physiology.py",
+      "bytes": 1843,
+      "sha256": "40d04370910356b1e1517ea7fb3465b0ed4556140f0ede97d1d30ed33b3988ac"
+    },
+    {
+      "path": "tests/test_nine_model_identity_controls.py",
+      "bytes": 2013,
+      "sha256": "fd8d7b97e1dcf191c73fe368d4956e1d48227c14849e8eb9ce955ee5ed4d363b"
+    },
+    {
+      "path": "tests/test_paper_completion.py",
+      "bytes": 2489,
+      "sha256": "1924437ac88eefc9e2c734b08b73ac162c91d9658b7522d133299b1c1e746ddb"
+    },
+    {
+      "path": "tests/test_paper_robustness.py",
+      "bytes": 2593,
+      "sha256": "1698059b1d712f3a8794ecff0749f259d02e0a9bec52eb0e2238a917d4f96b1c"
+    },
+    {
+      "path": "tests/test_posttraining_pca_sensitivity.py",
+      "bytes": 2599,
+      "sha256": "a7bf73a4c031bf6f2f28f7f1830f54a749a46a792f3d2342c8c0bcc481126327"
+    },
+    {
+      "path": "tests/test_readout_completion.py",
+      "bytes": 1862,
+      "sha256": "10b7d85cb12eaba52b85383edee4793c62a71ebe4028cb5ac0d41bf7508b8592"
+    },
+    {
+      "path": "tests/test_readout_selection_and_temporal_controls.py",
+      "bytes": 2673,
+      "sha256": "6baf8d5c001a8b90dc4fd7c8b97d7cdb5e8947ec0f26a39c1d833e0342bec55e"
+    },
+    {
+      "path": "tests/test_readout_sensitivity.py",
+      "bytes": 1747,
+      "sha256": "58837b65001c942bf78822e412dff2dacb44b6ab9623ecc5e0287b46b8d162ef"
+    },
+    {
+      "path": "tests/test_readout_task_extension.py",
+      "bytes": 2767,
+      "sha256": "e1d23a272ec27a1dcf3738bce679e7c904eb3a1497cf7cee6ed09ea96f989482"
+    },
+    {
+      "path": "tests/test_reviewer_completion.py",
+      "bytes": 1765,
+      "sha256": "d1a8fc055866944903b58674e6c4080be52b522693526d2245896699582db7e3"
+    },
+    {
+      "path": "tests/test_sample_alignment.py",
+      "bytes": 3706,
+      "sha256": "389457262c815136cebf61524980216a338d89244ef1427c975f00d54a6bd6ba"
+    },
+    {
+      "path": "tests/test_sf100_benchmark.py",
+      "bytes": 3060,
+      "sha256": "40c95a155c7236ccf9671b046033984746c903f080ce9d8ad471ba2bab87c255"
+    },
+    {
+      "path": "tests/test_sf100_loso.py",
+      "bytes": 1918,
+      "sha256": "df48f564c0daff40b397fc7891024bde77070764b09b8ea0e5f424af350b27d3"
+    },
+    {
+      "path": "tests/test_six_model_inference.py",
+      "bytes": 3796,
+      "sha256": "14eb7859fadc2cddfe366a70550a6c0097de60a5eddd59bf3c1cf3b1879663e4"
+    },
+    {
+      "path": "tests/test_sparse_roi_qc.py",
+      "bytes": 1977,
+      "sha256": "305f31ed04269277cb1a0500a55ca3f0b3101e8708df28c7d2d156272907a84a"
+    },
+    {
+      "path": "tests/test_unified_supplements.py",
+      "bytes": 1552,
+      "sha256": "4a3529e5cec78764b8937e34f6675b9a0ed4cfda817ebf6cc06be8bfdf902e94"
+    }
+  ]
+}

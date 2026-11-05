@@ -1,0 +1,31 @@
+{
+  "name": "BrainGFM",
+  "family": "FC-based foundation model",
+  "evaluation": "frozen encoder + shared linear probe",
+  "entrypoint": "scripts/sf100_benchmark.py",
+  "checkpoint": "checkpoints/pretrained/braingfm/f9739d729d1e/BrainGFM_pretrained.pth",
+  "checkpoint_commit": "f9739d729d1e3d186486ef8056337867c5fcfcf3",
+  "integration_status": "Included in the current numerical benchmark; no post-training",
+  "real_cohort_status": "Frozen Schaefer100 FC comparator; numerical scores and coverage are stored separately",
+  "available_atlases": [
+    "A424",
+    "Schaefer400+Tian450",
+    "Schaefer100_7Networks"
+  ],
+  "accepted_atlases": {
+    "schaefer": 100,
+    "schaefer200": 200,
+    "schaefer300": 300,
+    "shen268": 268,
+    "power264": 264,
+    "gordon333": 333,
+    "aal116": 116,
+    "aal3v1": 166
+  },
+  "fc_dir": "data/derived/sf100_fc_v1/archive/results",
+  "pretraining_overlap": "unresolved",
+  "comparison": "FC linear probe on exactly the same native-atlas matrices",
+  "documentation": "reproducibility/THIRD_PARTY.md",
+  "roi_order_verified_against_checkpoint": false,
+  "post_training": false
+}

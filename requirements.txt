@@ -1,0 +1,17 @@
+# Install a suitable PyTorch build separately for your CPU/CUDA environment.
+# The experiment-host snapshot is recorded in reproducibility/environment-snapshot.txt.
+-r requirements-figures.txt
+scipy==1.15.3
+scikit-learn==1.7.2
+transformers==4.57.6
+accelerate==1.14.0
+einops==0.8.2
+huggingface-hub==0.36.2
+nibabel==5.4.2
+peft==0.20.0
+PyYAML==6.0.3
+tqdm==4.70.0
+omegaconf==2.3.1
+xlsxwriter==3.2.9
+requests
+pytest==9.1.1

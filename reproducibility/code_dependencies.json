@@ -1,0 +1,1828 @@
+{
+  "snapshot": "2026-11-05",
+  "entry_points": [
+    "scripts/benchmark_training_controls.py",
+    "scripts/brainharmonix_task.py",
+    "scripts/demographic_benchmark.py",
+    "scripts/export_legacy_exploratory.py",
+    "scripts/fetch_fmrilm_variants.py",
+    "scripts/fetch_new_fm_assets.py",
+    "scripts/fetch_upstream_sources.py",
+    "scripts/fit_input_stats.py",
+    "scripts/fm_cls_posttraining_v5.py",
+    "scripts/fm_matched_supplement.py",
+    "scripts/fm_matched_v3.py",
+    "scripts/fm_posttraining_matrix.py",
+    "scripts/fm_readout_v4.py",
+    "scripts/fmrilm_variant_task.py",
+    "scripts/hrv_ppg_benchmark.py",
+    "scripts/intervention_prepost.py",
+    "scripts/intervention_prepost_inference.py",
+    "scripts/make_breathe_labels.py",
+    "scripts/make_labels.py",
+    "scripts/map_act_ids.py",
+    "scripts/new_fm_benchmark.py",
+    "scripts/paper_completion.py",
+    "scripts/paper_robustness.py",
+    "scripts/plot_results.py",
+    "scripts/prepare_adni.py",
+    "scripts/prepare_adni_paired.py",
+    "scripts/prepare_hrv_memory.py",
+    "scripts/prepare_motion_covariates.py",
+    "scripts/prepare_nacc_parity.py",
+    "scripts/prepare_nacc_uds.py",
+    "scripts/prepare_psopt.py",
+    "scripts/qc_cohort.py",
+    "scripts/run_adapted_readouts.py",
+    "scripts/run_adapted_readouts_focused.py",
+    "scripts/run_all_cohort_fd_controls.py",
+    "scripts/run_comparator_absolute_nulls.py",
+    "scripts/run_connectivity_readouts.py",
+    "scripts/run_ecg_frozen_no_usable.py",
+    "scripts/run_evidence_nulls.py",
+    "scripts/run_hrv_age_category_comparators.py",
+    "scripts/run_hrv_recall_external.py",
+    "scripts/run_hrv_recall_pca_revision.py",
+    "scripts/run_identity_controls.py",
+    "scripts/run_intervention_alignment.py",
+    "scripts/run_intervention_input_length.py",
+    "scripts/run_intervention_readouts.py",
+    "scripts/run_nested_readout_selection.py",
+    "scripts/run_new_fm_physiology.py",
+    "scripts/run_nine_model_identity_controls.py",
+    "scripts/run_physiology_matched.py",
+    "scripts/run_posttraining_pca_sensitivity.py",
+    "scripts/run_readout_completion.py",
+    "scripts/run_readout_task_extension.py",
+    "scripts/run_reference_comparison_fixed.py",
+    "scripts/run_scan_embedding_fd_prediction.py",
+    "scripts/run_sd_prediction_controls.py",
+    "scripts/run_sf100_hrv_recall_axes.py",
+    "scripts/run_sf100_loso.py",
+    "scripts/run_temporal_order_controls.py",
+    "scripts/run_unified_supplements.py",
+    "scripts/sample_alignment.py",
+    "scripts/sf100_benchmark.py",
+    "scripts/summarize_evidence.py",
+    "scripts/summarize_focused_external_cognition.py",
+    "scripts/summarize_readout_training_cv.py",
+    "scripts/transfer_calibration.py",
+    "scripts/verify_release.py"
+  ],
+  "files": [
+    "scripts/benchmark_adapted_fingerprint.py",
+    "scripts/benchmark_extension.py",
+    "scripts/benchmark_training_controls.py",
+    "scripts/brainharmonix_task.py",
+    "scripts/confirm_matched_axis.py",
+    "scripts/dapt_adni.py",
+    "scripts/demographic_benchmark.py",
+    "scripts/export_legacy_exploratory.py",
+    "scripts/fetch_fmrilm_variants.py",
+    "scripts/fetch_new_fm_assets.py",
+    "scripts/fetch_upstream_sources.py",
+    "scripts/finetune_adni_probe.py",
+    "scripts/fingerprint_adni.py",
+    "scripts/fingerprint_adni_matched.py",
+    "scripts/fingerprint_rct.py",
+    "scripts/fit_input_stats.py",
+    "scripts/fm_cls_posttraining_v5.py",
+    "scripts/fm_matched_supplement.py",
+    "scripts/fm_matched_v3.py",
+    "scripts/fm_posttraining_matrix.py",
+    "scripts/fm_readout_v4.py",
+    "scripts/fmrilm_variant_task.py",
+    "scripts/fusion_increment.py",
+    "scripts/hrv_ppg_benchmark.py",
+    "scripts/intervention_prepost.py",
+    "scripts/intervention_prepost_inference.py",
+    "scripts/joint_inference.py",
+    "scripts/learning_curve.py",
+    "scripts/make_breathe_labels.py",
+    "scripts/make_labels.py",
+    "scripts/map_act_ids.py",
+    "scripts/materialize_diagnosis_encoder.py",
+    "scripts/materialize_matrix_encoder.py",
+    "scripts/mci_axis_transfer.py",
+    "scripts/nacc_posttrain.py",
+    "scripts/nacc_posttransfer.py",
+    "scripts/nacc_probe_adapter.py",
+    "scripts/new_fm_benchmark.py",
+    "scripts/paper_completion.py",
+    "scripts/paper_robustness.py",
+    "scripts/plot_results.py",
+    "scripts/plot_results_base.py",
+    "scripts/prepare_adni.py",
+    "scripts/prepare_adni_paired.py",
+    "scripts/prepare_hrv_memory.py",
+    "scripts/prepare_motion_covariates.py",
+    "scripts/prepare_nacc_parity.py",
+    "scripts/prepare_nacc_uds.py",
+    "scripts/prepare_psopt.py",
+    "scripts/probe_readouts.py",
+    "scripts/qc_cohort.py",
+    "scripts/rct_clinical_increment.py",
+    "scripts/rct_hrv_trait.py",
+    "scripts/rct_inscanner_hr.py",
+    "scripts/rct_inscanner_patch_hr.py",
+    "scripts/rct_loso.py",
+    "scripts/rct_positive_control.py",
+    "scripts/rct_probe.py",
+    "scripts/readout_sensitivity.py",
+    "scripts/run_adapted_readouts.py",
+    "scripts/run_adapted_readouts_focused.py",
+    "scripts/run_all_cohort_fd_controls.py",
+    "scripts/run_comparator_absolute_nulls.py",
+    "scripts/run_connectivity_readouts.py",
+    "scripts/run_diagnosis_posttraining.py",
+    "scripts/run_ecg_frozen_no_usable.py",
+    "scripts/run_evidence_nulls.py",
+    "scripts/run_external_preliminary.py",
+    "scripts/run_hrv_age_category_comparators.py",
+    "scripts/run_hrv_recall_external.py",
+    "scripts/run_hrv_recall_pca_revision.py",
+    "scripts/run_identity_controls.py",
+    "scripts/run_intervention_alignment.py",
+    "scripts/run_intervention_input_length.py",
+    "scripts/run_intervention_readouts.py",
+    "scripts/run_nested_readout_selection.py",
+    "scripts/run_new_fm_physiology.py",
+    "scripts/run_nine_model_identity_controls.py",
+    "scripts/run_physiology_matched.py",
+    "scripts/run_posttraining_pca_sensitivity.py",
+    "scripts/run_readout_completion.py",
+    "scripts/run_readout_task_extension.py",
+    "scripts/run_reference_comparison_fixed.py",
+    "scripts/run_scan_embedding_fd_prediction.py",
+    "scripts/run_sd_prediction_controls.py",
+    "scripts/run_sf100_hrv_recall_axes.py",
+    "scripts/run_sf100_loso.py",
+    "scripts/run_temporal_order_controls.py",
+    "scripts/run_unified_supplements.py",
+    "scripts/sample_alignment.py",
+    "scripts/sf100_benchmark.py",
+    "scripts/summarize_evidence.py",
+    "scripts/summarize_focused_external_cognition.py",
+    "scripts/summarize_readout_training_cv.py",
+    "scripts/transfer_baseline.py",
+    "scripts/transfer_calibration.py",
+    "scripts/verify_release.py",
+    "src/__init__.py",
+    "src/adni_finetune.py",
+    "src/adni_folds.py",
+    "src/baselines/__init__.py",
+    "src/baselines/fc_features.py",
+    "src/benchmark_completion_tasks.py",
+    "src/benchmark_evaluation.py",
+    "src/benchmark_gap_tasks.py",
+    "src/benchmark_gpu_lock.py",
+    "src/benchmark_gpu_phase.py",
+    "src/braingfm.py",
+    "src/brainharmonix/__init__.py",
+    "src/brainharmonix/data.py",
+    "src/brainharmonix/evaluate.py",
+    "src/brainharmonix/extract.py",
+    "src/brainharmonix/models.py",
+    "src/brainharmonix/physiology.py",
+    "src/brainharmonix/references.py",
+    "src/brainharmonix/report.py",
+    "src/brainharmonix/sensitivity.py",
+    "src/brainharmonix/tasks.py",
+    "src/brainharmonix/train.py",
+    "src/brainjepa.py",
+    "src/brainjepa_official/__init__.py",
+    "src/brainjepa_official/downstream/__init__.py",
+    "src/brainjepa_official/downstream/models_vit.py",
+    "src/brainjepa_official/helper.py",
+    "src/brainjepa_official/masks/__init__.py",
+    "src/brainjepa_official/masks/utils.py",
+    "src/brainjepa_official/models/__init__.py",
+    "src/brainjepa_official/models/vision_transformer.py",
+    "src/brainjepa_official/utils/__init__.py",
+    "src/brainjepa_official/utils/schedulers.py",
+    "src/brainjepa_official/utils/tensors.py",
+    "src/brainlm_input.py",
+    "src/brainlm_mae/__init__.py",
+    "src/brainlm_mae/configuration_brainlm.py",
+    "src/brainlm_mae/fast_attention.py",
+    "src/brainlm_mae/modeling_brainlm.py",
+    "src/brainlm_mae/modeling_vit_mae_with_padding.py",
+    "src/checkpoint_selection.py",
+    "src/classifiers.py",
+    "src/cohorts.py",
+    "src/config.py",
+    "src/datasets.py",
+    "src/demographic_benchmark.py",
+    "src/diagnosis_posttraining.py",
+    "src/ecg_frozen_no_usable.py",
+    "src/embedding_harmonization.py",
+    "src/fm_cls_v5/__init__.py",
+    "src/fm_cls_v5/data.py",
+    "src/fm_cls_v5/evaluate.py",
+    "src/fm_cls_v5/models.py",
+    "src/fm_cls_v5/report.py",
+    "src/fm_cls_v5/supplement.py",
+    "src/fm_cls_v5/train.py",
+    "src/fm_matched_v3/__init__.py",
+    "src/fm_matched_v3/data.py",
+    "src/fm_matched_v3/diagnosis.py",
+    "src/fm_matched_v3/evaluate.py",
+    "src/fm_matched_v3/intervention_physiology.py",
+    "src/fm_matched_v3/models.py",
+    "src/fm_matched_v3/physiology.py",
+    "src/fm_matched_v3/probes.py",
+    "src/fm_matched_v3/supplement.py",
+    "src/fm_matched_v3/train.py",
+    "src/fm_matrix/__init__.py",
+    "src/fm_matrix/data.py",
+    "src/fm_matrix/evaluate.py",
+    "src/fm_matrix/models.py",
+    "src/fm_matrix/train.py",
+    "src/fm_readout_v4/__init__.py",
+    "src/fm_readout_v4/data.py",
+    "src/fm_readout_v4/evaluate.py",
+    "src/fm_readout_v4/models.py",
+    "src/fm_readout_v4/supplement.py",
+    "src/fmrilm.py",
+    "src/fmrilm_variants/__init__.py",
+    "src/fmrilm_variants/models.py",
+    "src/fmrilm_variants/runtime.py",
+    "src/model_input_protocol.py",
+    "src/model_loader.py",
+    "src/motion_covariates.py",
+    "src/new_fm/__init__.py",
+    "src/new_fm/data.py",
+    "src/new_fm/evaluate.py",
+    "src/new_fm/extract.py",
+    "src/new_fm/models.py",
+    "src/new_fm/physiology.py",
+    "src/new_fm/report.py",
+    "src/new_fm/sensitivity.py",
+    "src/new_fm/train.py",
+    "src/paper_completion.py",
+    "src/paper_paired_stats.py",
+    "src/paper_robustness.py",
+    "src/paper_task_expansion.py",
+    "src/paths.py",
+    "src/physiology_benchmark.py",
+    "src/protocol.py",
+    "src/qc.py",
+    "src/readout_control_encoders.py",
+    "src/readout_sensitivity.py",
+    "src/reviewer_completion_tasks.py",
+    "src/roi_signal_qc.py",
+    "src/sample_alignment.py",
+    "src/sf100_benchmark.py",
+    "src/temporal.py",
+    "src/thirdorder.py",
+    "src/unified_supplements.py",
+    "src/vendor/__init__.py",
+    "src/vendor/braingfm/BrainGFM_Gprompt.py",
+    "src/vendor/braingfm/__init__.py",
+    "src/vendor/braingfm/disease_names.py",
+    "src/vendor/braingfm/graph_prompt.py",
+    "src/vitmae_input.py",
+    "tests/test_adapted_readouts.py",
+    "tests/test_adapted_readouts_focused.py",
+    "tests/test_benchmark_evaluation.py",
+    "tests/test_checkpoint_selection.py",
+    "tests/test_connectivity_readouts.py",
+    "tests/test_diagnosis_posttraining.py",
+    "tests/test_embedding_harmonization.py",
+    "tests/test_evidence_nulls.py",
+    "tests/test_external_preliminary.py",
+    "tests/test_intervention_alignment.py",
+    "tests/test_intervention_input_length.py",
+    "tests/test_intervention_prepost.py",
+    "tests/test_intervention_prepost_inference.py",
+    "tests/test_intervention_readouts.py",
+    "tests/test_matched_supplement.py",
+    "tests/test_matched_v3.py",
+    "tests/test_model_input_protocol.py",
+    "tests/test_motion_covariates.py",
+    "tests/test_nacc_uds.py",
+    "tests/test_new_fm_physiology.py",
+    "tests/test_nine_model_identity_controls.py",
+    "tests/test_paper_completion.py",
+    "tests/test_paper_robustness.py",
+    "tests/test_posttraining_pca_sensitivity.py",
+    "tests/test_readout_completion.py",
+    "tests/test_readout_selection_and_temporal_controls.py",
+    "tests/test_readout_sensitivity.py",
+    "tests/test_readout_task_extension.py",
+    "tests/test_reviewer_completion.py",
+    "tests/test_sample_alignment.py",
+    "tests/test_sf100_benchmark.py",
+    "tests/test_sf100_loso.py",
+    "tests/test_six_model_inference.py",
+    "tests/test_sparse_roi_qc.py",
+    "tests/test_unified_supplements.py"
+  ],
+  "local_imports": {
+    "scripts/benchmark_adapted_fingerprint.py": [
+      "scripts/benchmark_extension.py",
+      "scripts/probe_readouts.py",
+      "scripts/run_external_preliminary.py",
+      "scripts/transfer_baseline.py",
+      "src/benchmark_gpu_phase.py",
+      "src/datasets.py",
+      "src/model_loader.py",
+      "src/paths.py"
+    ],
+    "scripts/benchmark_extension.py": [
+      "scripts/confirm_matched_axis.py",
+      "scripts/probe_readouts.py",
+      "scripts/run_external_preliminary.py",
+      "scripts/transfer_baseline.py",
+      "src/benchmark_evaluation.py",
+      "src/benchmark_gpu_phase.py",
+      "src/brainjepa.py",
+      "src/brainlm_input.py",
+      "src/brainlm_mae/modeling_brainlm.py",
+      "src/datasets.py",
+      "src/model_loader.py",
+      "src/paths.py",
+      "src/vitmae_input.py"
+    ],
+    "scripts/benchmark_training_controls.py": [
+      "scripts/benchmark_extension.py",
+      "src/benchmark_evaluation.py",
+      "src/brainlm_mae/modeling_brainlm.py",
+      "src/datasets.py",
+      "src/model_loader.py",
+      "src/paths.py"
+    ],
+    "scripts/brainharmonix_task.py": [
+      "src/brainharmonix/__init__.py",
+      "src/brainharmonix/data.py",
+      "src/brainharmonix/evaluate.py",
+      "src/brainharmonix/extract.py",
+      "src/brainharmonix/report.py",
+      "src/brainharmonix/sensitivity.py",
+      "src/brainharmonix/tasks.py",
+      "src/brainharmonix/train.py"
+    ],
+    "scripts/confirm_matched_axis.py": [],
+    "scripts/dapt_adni.py": [
+      "src/config.py",
+      "src/datasets.py",
+      "src/model_loader.py",
+      "src/paths.py"
+    ],
+    "scripts/demographic_benchmark.py": [
+      "src/demographic_benchmark.py"
+    ],
+    "scripts/export_legacy_exploratory.py": [
+      "src/benchmark_evaluation.py",
+      "src/fm_matrix/data.py"
+    ],
+    "scripts/fetch_fmrilm_variants.py": [
+      "scripts/fetch_new_fm_assets.py"
+    ],
+    "scripts/fetch_new_fm_assets.py": [],
+    "scripts/fetch_upstream_sources.py": [],
+    "scripts/finetune_adni_probe.py": [
+      "src/adni_finetune.py",
+      "src/adni_folds.py",
+      "src/config.py",
+      "src/datasets.py",
+      "src/paths.py"
+    ],
+    "scripts/fingerprint_adni.py": [
+      "scripts/dapt_adni.py",
+      "scripts/probe_readouts.py",
+      "scripts/transfer_baseline.py",
+      "src/config.py",
+      "src/datasets.py",
+      "src/model_loader.py",
+      "src/paths.py",
+      "src/thirdorder.py"
+    ],
+    "scripts/fingerprint_adni_matched.py": [
+      "scripts/fingerprint_adni.py",
+      "scripts/fingerprint_rct.py",
+      "scripts/probe_readouts.py",
+      "scripts/transfer_baseline.py",
+      "src/benchmark_gpu_phase.py",
+      "src/config.py",
+      "src/datasets.py",
+      "src/model_loader.py",
+      "src/paths.py",
+      "src/thirdorder.py"
+    ],
+    "scripts/fingerprint_rct.py": [
+      "scripts/fingerprint_adni.py",
+      "scripts/probe_readouts.py",
+      "scripts/rct_probe.py",
+      "scripts/transfer_baseline.py",
+      "src/cohorts.py",
+      "src/config.py",
+      "src/datasets.py",
+      "src/model_loader.py",
+      "src/paths.py",
+      "src/thirdorder.py"
+    ],
+    "scripts/fit_input_stats.py": [
+      "src/brainlm_input.py",
+      "src/cohorts.py",
+      "src/paths.py"
+    ],
+    "scripts/fm_cls_posttraining_v5.py": [
+      "src/fm_cls_v5/__init__.py",
+      "src/fm_cls_v5/data.py",
+      "src/fm_cls_v5/evaluate.py",
+      "src/fm_cls_v5/models.py",
+      "src/fm_cls_v5/report.py",
+      "src/fm_cls_v5/supplement.py",
+      "src/fm_cls_v5/train.py"
+    ],
+    "scripts/fm_matched_supplement.py": [
+      "src/fm_matched_v3/__init__.py",
+      "src/fm_matched_v3/intervention_physiology.py",
+      "src/fm_matched_v3/physiology.py",
+      "src/fm_matched_v3/supplement.py"
+    ],
+    "scripts/fm_matched_v3.py": [
+      "src/fm_matched_v3/__init__.py",
+      "src/fm_matched_v3/data.py",
+      "src/fm_matched_v3/diagnosis.py",
+      "src/fm_matched_v3/evaluate.py",
+      "src/fm_matched_v3/models.py",
+      "src/fm_matched_v3/train.py"
+    ],
+    "scripts/fm_posttraining_matrix.py": [
+      "scripts/confirm_matched_axis.py",
+      "src/benchmark_evaluation.py",
+      "src/fm_matrix/__init__.py",
+      "src/fm_matrix/data.py",
+      "src/fm_matrix/evaluate.py",
+      "src/fm_matrix/models.py",
+      "src/fm_matrix/train.py"
+    ],
+    "scripts/fm_readout_v4.py": [
+      "src/fm_matrix/train.py",
+      "src/fm_readout_v4/__init__.py",
+      "src/fm_readout_v4/data.py",
+      "src/fm_readout_v4/evaluate.py",
+      "src/fm_readout_v4/models.py",
+      "src/fm_readout_v4/supplement.py"
+    ],
+    "scripts/fmrilm_variant_task.py": [
+      "src/fmrilm_variants/runtime.py",
+      "src/new_fm/__init__.py",
+      "src/new_fm/data.py",
+      "src/new_fm/evaluate.py",
+      "src/new_fm/extract.py",
+      "src/new_fm/report.py",
+      "src/new_fm/sensitivity.py",
+      "src/new_fm/train.py"
+    ],
+    "scripts/fusion_increment.py": [
+      "scripts/probe_readouts.py",
+      "scripts/transfer_baseline.py",
+      "src/benchmark_evaluation.py",
+      "src/benchmark_gpu_phase.py",
+      "src/config.py",
+      "src/datasets.py",
+      "src/model_loader.py",
+      "src/paths.py"
+    ],
+    "scripts/hrv_ppg_benchmark.py": [
+      "scripts/benchmark_extension.py",
+      "scripts/confirm_matched_axis.py",
+      "scripts/probe_readouts.py",
+      "scripts/rct_inscanner_patch_hr.py",
+      "scripts/run_external_preliminary.py",
+      "scripts/transfer_baseline.py",
+      "src/benchmark_evaluation.py",
+      "src/benchmark_gpu_phase.py",
+      "src/checkpoint_selection.py",
+      "src/datasets.py",
+      "src/model_loader.py",
+      "src/paths.py"
+    ],
+    "scripts/intervention_prepost.py": [
+      "src/benchmark_evaluation.py",
+      "src/fm_matrix/data.py",
+      "src/fm_readout_v4/data.py",
+      "src/paper_completion.py",
+      "src/paper_robustness.py",
+      "src/readout_sensitivity.py",
+      "src/sf100_benchmark.py"
+    ],
+    "scripts/intervention_prepost_inference.py": [
+      "scripts/intervention_prepost.py",
+      "src/paper_paired_stats.py"
+    ],
+    "scripts/joint_inference.py": [
+      "src/paper_paired_stats.py"
+    ],
+    "scripts/learning_curve.py": [
+      "scripts/probe_readouts.py",
+      "scripts/transfer_baseline.py",
+      "src/benchmark_gpu_phase.py",
+      "src/config.py",
+      "src/datasets.py",
+      "src/model_loader.py",
+      "src/paths.py"
+    ],
+    "scripts/make_breathe_labels.py": [
+      "src/paths.py"
+    ],
+    "scripts/make_labels.py": [
+      "src/paths.py"
+    ],
+    "scripts/map_act_ids.py": [
+      "src/paths.py"
+    ],
+    "scripts/materialize_diagnosis_encoder.py": [
+      "scripts/materialize_matrix_encoder.py",
+      "src/diagnosis_posttraining.py",
+      "src/fm_matrix/data.py",
+      "src/fm_matrix/models.py",
+      "src/model_loader.py"
+    ],
+    "scripts/materialize_matrix_encoder.py": [
+      "src/fm_matrix/data.py",
+      "src/fm_matrix/evaluate.py",
+      "src/fm_matrix/models.py",
+      "src/fm_matrix/train.py",
+      "src/model_loader.py"
+    ],
+    "scripts/mci_axis_transfer.py": [
+      "scripts/rct_probe.py",
+      "src/benchmark_evaluation.py",
+      "src/benchmark_gpu_phase.py",
+      "src/cohorts.py",
+      "src/config.py",
+      "src/datasets.py",
+      "src/model_loader.py",
+      "src/paths.py",
+      "src/thirdorder.py"
+    ],
+    "scripts/nacc_posttrain.py": [
+      "scripts/finetune_adni_probe.py",
+      "scripts/run_external_preliminary.py",
+      "src/benchmark_evaluation.py",
+      "src/datasets.py",
+      "src/diagnosis_posttraining.py",
+      "src/paths.py"
+    ],
+    "scripts/nacc_posttransfer.py": [
+      "scripts/confirm_matched_axis.py",
+      "scripts/mci_axis_transfer.py",
+      "scripts/probe_readouts.py",
+      "scripts/rct_positive_control.py",
+      "scripts/rct_probe.py",
+      "scripts/run_external_preliminary.py",
+      "scripts/transfer_baseline.py",
+      "src/benchmark_evaluation.py",
+      "src/benchmark_gpu_phase.py",
+      "src/cohorts.py",
+      "src/datasets.py",
+      "src/model_loader.py",
+      "src/paths.py"
+    ],
+    "scripts/nacc_probe_adapter.py": [
+      "scripts/probe_readouts.py",
+      "src/benchmark_evaluation.py"
+    ],
+    "scripts/new_fm_benchmark.py": [
+      "src/new_fm/__init__.py",
+      "src/new_fm/data.py",
+      "src/new_fm/evaluate.py",
+      "src/new_fm/extract.py",
+      "src/new_fm/report.py",
+      "src/new_fm/sensitivity.py",
+      "src/new_fm/train.py"
+    ],
+    "scripts/paper_completion.py": [
+      "src/paper_completion.py"
+    ],
+    "scripts/paper_robustness.py": [
+      "src/paper_robustness.py"
+    ],
+    "scripts/plot_results.py": [
+      "scripts/plot_results_base.py"
+    ],
+    "scripts/plot_results_base.py": [],
+    "scripts/prepare_adni.py": [
+      "src/brainlm_input.py",
+      "src/config.py",
+      "src/paths.py",
+      "src/roi_signal_qc.py",
+      "src/temporal.py"
+    ],
+    "scripts/prepare_adni_paired.py": [
+      "scripts/prepare_adni.py",
+      "src/config.py",
+      "src/paths.py"
+    ],
+    "scripts/prepare_hrv_memory.py": [
+      "src/fm_matched_v3/data.py"
+    ],
+    "scripts/prepare_motion_covariates.py": [
+      "src/motion_covariates.py"
+    ],
+    "scripts/prepare_nacc_parity.py": [
+      "scripts/run_external_preliminary.py"
+    ],
+    "scripts/prepare_nacc_uds.py": [
+      "scripts/run_external_preliminary.py"
+    ],
+    "scripts/prepare_psopt.py": [],
+    "scripts/probe_readouts.py": [
+      "src/benchmark_gpu_phase.py",
+      "src/brainjepa.py",
+      "src/brainlm_input.py",
+      "src/config.py",
+      "src/datasets.py",
+      "src/model_loader.py",
+      "src/paths.py",
+      "src/vitmae_input.py"
+    ],
+    "scripts/qc_cohort.py": [
+      "src/cohorts.py",
+      "src/paths.py",
+      "src/qc.py",
+      "src/temporal.py"
+    ],
+    "scripts/rct_clinical_increment.py": [
+      "scripts/fusion_increment.py",
+      "scripts/mci_axis_transfer.py",
+      "scripts/rct_positive_control.py",
+      "scripts/rct_probe.py",
+      "src/benchmark_evaluation.py",
+      "src/benchmark_gpu_phase.py",
+      "src/cohorts.py",
+      "src/config.py",
+      "src/datasets.py",
+      "src/model_loader.py",
+      "src/paths.py"
+    ],
+    "scripts/rct_hrv_trait.py": [
+      "scripts/fusion_increment.py",
+      "scripts/mci_axis_transfer.py",
+      "scripts/rct_positive_control.py",
+      "scripts/rct_probe.py",
+      "src/benchmark_gpu_phase.py",
+      "src/cohorts.py",
+      "src/config.py",
+      "src/datasets.py",
+      "src/model_loader.py",
+      "src/paths.py",
+      "src/thirdorder.py"
+    ],
+    "scripts/rct_inscanner_hr.py": [
+      "scripts/fusion_increment.py",
+      "scripts/mci_axis_transfer.py",
+      "scripts/rct_positive_control.py",
+      "scripts/rct_probe.py",
+      "src/benchmark_gpu_phase.py",
+      "src/cohorts.py",
+      "src/config.py",
+      "src/datasets.py",
+      "src/model_loader.py",
+      "src/paths.py",
+      "src/thirdorder.py"
+    ],
+    "scripts/rct_inscanner_patch_hr.py": [
+      "scripts/probe_readouts.py",
+      "src/benchmark_evaluation.py",
+      "src/cohorts.py",
+      "src/config.py",
+      "src/datasets.py",
+      "src/model_loader.py",
+      "src/paths.py"
+    ],
+    "scripts/rct_loso.py": [
+      "scripts/mci_axis_transfer.py",
+      "scripts/rct_positive_control.py",
+      "scripts/rct_probe.py",
+      "src/benchmark_evaluation.py",
+      "src/benchmark_gpu_phase.py",
+      "src/brainjepa.py",
+      "src/cohorts.py",
+      "src/config.py",
+      "src/datasets.py",
+      "src/fmrilm.py",
+      "src/model_loader.py",
+      "src/paths.py",
+      "src/thirdorder.py",
+      "src/vitmae_input.py"
+    ],
+    "scripts/rct_positive_control.py": [
+      "scripts/probe_readouts.py",
+      "scripts/rct_probe.py",
+      "scripts/transfer_baseline.py",
+      "src/cohorts.py",
+      "src/config.py",
+      "src/datasets.py",
+      "src/model_loader.py",
+      "src/paths.py"
+    ],
+    "scripts/rct_probe.py": [
+      "scripts/probe_readouts.py",
+      "scripts/rct_positive_control.py",
+      "scripts/transfer_baseline.py",
+      "src/benchmark_evaluation.py",
+      "src/benchmark_gpu_phase.py",
+      "src/braingfm.py",
+      "src/brainjepa.py",
+      "src/brainlm_input.py",
+      "src/cohorts.py",
+      "src/config.py",
+      "src/datasets.py",
+      "src/fmrilm.py",
+      "src/model_loader.py",
+      "src/paths.py",
+      "src/protocol.py",
+      "src/temporal.py",
+      "src/thirdorder.py",
+      "src/vitmae_input.py"
+    ],
+    "scripts/readout_sensitivity.py": [
+      "src/readout_sensitivity.py"
+    ],
+    "scripts/run_adapted_readouts.py": [
+      "scripts/run_connectivity_readouts.py",
+      "src/benchmark_evaluation.py",
+      "src/brainharmonix/data.py",
+      "src/brainharmonix/models.py",
+      "src/fm_matched_v3/models.py",
+      "src/fm_matrix/data.py",
+      "src/fm_readout_v4/data.py",
+      "src/fm_readout_v4/evaluate.py",
+      "src/fm_readout_v4/models.py",
+      "src/fmrilm_variants/models.py",
+      "src/new_fm/data.py",
+      "src/new_fm/models.py",
+      "src/paper_paired_stats.py",
+      "src/readout_sensitivity.py",
+      "src/sample_alignment.py",
+      "src/sf100_benchmark.py",
+      "src/unified_supplements.py"
+    ],
+    "scripts/run_adapted_readouts_focused.py": [
+      "scripts/run_adapted_readouts.py",
+      "src/fm_matrix/data.py"
+    ],
+    "scripts/run_all_cohort_fd_controls.py": [
+      "scripts/run_nine_model_identity_controls.py",
+      "src/fm_matrix/data.py",
+      "src/paper_paired_stats.py"
+    ],
+    "scripts/run_comparator_absolute_nulls.py": [
+      "scripts/run_evidence_nulls.py",
+      "src/readout_sensitivity.py"
+    ],
+    "scripts/run_connectivity_readouts.py": [
+      "src/benchmark_evaluation.py",
+      "src/brainharmonix/data.py",
+      "src/brainharmonix/models.py",
+      "src/fm_matched_v3/models.py",
+      "src/fm_matrix/data.py",
+      "src/fm_readout_v4/data.py",
+      "src/fm_readout_v4/models.py",
+      "src/fmrilm_variants/runtime.py",
+      "src/new_fm/data.py",
+      "src/new_fm/models.py",
+      "src/paper_completion.py",
+      "src/paper_paired_stats.py",
+      "src/readout_sensitivity.py",
+      "src/sample_alignment.py",
+      "src/sf100_benchmark.py",
+      "src/unified_supplements.py"
+    ],
+    "scripts/run_diagnosis_posttraining.py": [
+      "src/benchmark_gpu_lock.py",
+      "src/diagnosis_posttraining.py",
+      "src/fm_matrix/data.py"
+    ],
+    "scripts/run_ecg_frozen_no_usable.py": [
+      "src/ecg_frozen_no_usable.py"
+    ],
+    "scripts/run_evidence_nulls.py": [
+      "src/benchmark_evaluation.py",
+      "src/fm_matched_v3/__init__.py",
+      "src/fm_matched_v3/physiology.py",
+      "src/fm_readout_v4/data.py",
+      "src/paper_paired_stats.py",
+      "src/sf100_benchmark.py",
+      "src/unified_supplements.py"
+    ],
+    "scripts/run_external_preliminary.py": [
+      "scripts/confirm_matched_axis.py",
+      "scripts/mci_axis_transfer.py",
+      "scripts/probe_readouts.py",
+      "scripts/transfer_baseline.py",
+      "src/benchmark_evaluation.py",
+      "src/datasets.py",
+      "src/model_loader.py",
+      "src/paths.py"
+    ],
+    "scripts/run_hrv_age_category_comparators.py": [
+      "scripts/run_evidence_nulls.py",
+      "src/benchmark_evaluation.py",
+      "src/demographic_benchmark.py"
+    ],
+    "scripts/run_hrv_recall_external.py": [
+      "src/benchmark_evaluation.py",
+      "src/fm_matrix/data.py",
+      "src/fm_readout_v4/data.py",
+      "src/fm_readout_v4/supplement.py",
+      "src/paper_completion.py",
+      "src/paper_paired_stats.py",
+      "src/sample_alignment.py",
+      "src/sf100_benchmark.py"
+    ],
+    "scripts/run_hrv_recall_pca_revision.py": [
+      "scripts/run_evidence_nulls.py",
+      "scripts/transfer_baseline.py",
+      "src/benchmark_evaluation.py",
+      "src/fm_matched_v3/probes.py",
+      "src/fm_readout_v4/data.py",
+      "src/fm_readout_v4/evaluate.py",
+      "src/paper_paired_stats.py",
+      "src/unified_supplements.py"
+    ],
+    "scripts/run_identity_controls.py": [
+      "scripts/run_connectivity_readouts.py",
+      "src/brainlm_mae/configuration_brainlm.py",
+      "src/brainlm_mae/modeling_brainlm.py",
+      "src/config.py",
+      "src/datasets.py",
+      "src/fm_matrix/data.py",
+      "src/fm_readout_v4/data.py",
+      "src/model_loader.py",
+      "src/paper_paired_stats.py",
+      "src/paths.py",
+      "src/readout_sensitivity.py",
+      "src/sample_alignment.py",
+      "src/unified_supplements.py"
+    ],
+    "scripts/run_intervention_alignment.py": [
+      "scripts/intervention_prepost.py",
+      "scripts/run_intervention_readouts.py",
+      "src/embedding_harmonization.py",
+      "src/fm_matrix/data.py",
+      "src/fm_readout_v4/data.py",
+      "src/paper_completion.py",
+      "src/paper_paired_stats.py"
+    ],
+    "scripts/run_intervention_input_length.py": [
+      "scripts/intervention_prepost.py",
+      "scripts/run_intervention_readouts.py",
+      "src/brainharmonix/data.py",
+      "src/brainharmonix/models.py",
+      "src/fm_matrix/data.py",
+      "src/fm_matrix/train.py",
+      "src/fm_readout_v4/data.py",
+      "src/fm_readout_v4/models.py",
+      "src/fmrilm_variants/models.py",
+      "src/new_fm/data.py",
+      "src/new_fm/models.py",
+      "src/paper_paired_stats.py",
+      "src/paper_robustness.py"
+    ],
+    "scripts/run_intervention_readouts.py": [
+      "scripts/intervention_prepost.py",
+      "scripts/intervention_prepost_inference.py",
+      "scripts/run_connectivity_readouts.py",
+      "scripts/run_posttraining_pca_sensitivity.py",
+      "src/fm_matrix/data.py",
+      "src/fm_readout_v4/data.py",
+      "src/paper_paired_stats.py"
+    ],
+    "scripts/run_nested_readout_selection.py": [
+      "scripts/run_connectivity_readouts.py",
+      "scripts/run_readout_completion.py",
+      "src/benchmark_evaluation.py",
+      "src/fm_matrix/data.py",
+      "src/paper_paired_stats.py",
+      "src/sf100_benchmark.py"
+    ],
+    "scripts/run_new_fm_physiology.py": [
+      "src/benchmark_gpu_lock.py",
+      "src/new_fm/__init__.py",
+      "src/new_fm/evaluate.py",
+      "src/new_fm/extract.py",
+      "src/new_fm/physiology.py",
+      "src/new_fm/report.py"
+    ],
+    "scripts/run_nine_model_identity_controls.py": [
+      "scripts/run_connectivity_readouts.py",
+      "scripts/run_identity_controls.py",
+      "src/fm_matrix/data.py",
+      "src/fm_readout_v4/data.py",
+      "src/new_fm/data.py",
+      "src/paper_paired_stats.py",
+      "src/readout_control_encoders.py",
+      "src/readout_sensitivity.py",
+      "src/temporal.py"
+    ],
+    "scripts/run_physiology_matched.py": [
+      "src/benchmark_gpu_lock.py",
+      "src/fm_matrix/data.py",
+      "src/physiology_benchmark.py"
+    ],
+    "scripts/run_posttraining_pca_sensitivity.py": [
+      "scripts/intervention_prepost.py",
+      "scripts/intervention_prepost_inference.py",
+      "src/fm_matrix/data.py",
+      "src/fm_readout_v4/data.py",
+      "src/fm_readout_v4/evaluate.py",
+      "src/paper_paired_stats.py",
+      "src/reviewer_completion_tasks.py",
+      "src/unified_supplements.py"
+    ],
+    "scripts/run_readout_completion.py": [
+      "scripts/run_adapted_readouts.py",
+      "scripts/run_connectivity_readouts.py",
+      "scripts/run_readout_task_extension.py",
+      "src/benchmark_evaluation.py",
+      "src/fm_matrix/data.py",
+      "src/fm_readout_v4/data.py",
+      "src/paper_completion.py",
+      "src/paper_paired_stats.py",
+      "src/readout_sensitivity.py"
+    ],
+    "scripts/run_readout_task_extension.py": [
+      "scripts/run_connectivity_readouts.py",
+      "src/benchmark_evaluation.py",
+      "src/fm_matrix/data.py",
+      "src/paper_paired_stats.py",
+      "src/sf100_benchmark.py"
+    ],
+    "scripts/run_reference_comparison_fixed.py": [
+      "src/benchmark_gap_tasks.py",
+      "src/paper_paired_stats.py"
+    ],
+    "scripts/run_scan_embedding_fd_prediction.py": [
+      "scripts/run_connectivity_readouts.py",
+      "scripts/run_nine_model_identity_controls.py",
+      "src/benchmark_evaluation.py",
+      "src/fm_matrix/data.py",
+      "src/paper_paired_stats.py"
+    ],
+    "scripts/run_sd_prediction_controls.py": [
+      "scripts/intervention_prepost.py",
+      "scripts/run_connectivity_readouts.py",
+      "scripts/run_evidence_nulls.py",
+      "scripts/run_intervention_readouts.py",
+      "scripts/run_nine_model_identity_controls.py",
+      "src/benchmark_evaluation.py",
+      "src/fm_matched_v3/probes.py",
+      "src/fm_matrix/data.py",
+      "src/fm_readout_v4/data.py",
+      "src/fm_readout_v4/evaluate.py",
+      "src/new_fm/data.py",
+      "src/paper_paired_stats.py",
+      "src/paper_robustness.py",
+      "src/sample_alignment.py",
+      "src/sf100_benchmark.py",
+      "src/temporal.py"
+    ],
+    "scripts/run_sf100_hrv_recall_axes.py": [
+      "src/benchmark_evaluation.py",
+      "src/fm_matrix/data.py",
+      "src/paper_paired_stats.py",
+      "src/readout_sensitivity.py",
+      "src/sample_alignment.py",
+      "src/sf100_benchmark.py"
+    ],
+    "scripts/run_sf100_loso.py": [
+      "src/benchmark_evaluation.py",
+      "src/fm_matrix/data.py",
+      "src/fm_readout_v4/supplement.py",
+      "src/paper_paired_stats.py",
+      "src/sample_alignment.py",
+      "src/sf100_benchmark.py"
+    ],
+    "scripts/run_temporal_order_controls.py": [
+      "scripts/run_connectivity_readouts.py",
+      "scripts/run_nine_model_identity_controls.py",
+      "src/fm_matrix/data.py",
+      "src/paper_paired_stats.py",
+      "src/readout_control_encoders.py"
+    ],
+    "scripts/run_unified_supplements.py": [
+      "src/fm_readout_v4/evaluate.py",
+      "src/unified_supplements.py"
+    ],
+    "scripts/sample_alignment.py": [
+      "src/sample_alignment.py"
+    ],
+    "scripts/sf100_benchmark.py": [
+      "src/sf100_benchmark.py"
+    ],
+    "scripts/summarize_evidence.py": [
+      "scripts/plot_results_base.py"
+    ],
+    "scripts/summarize_focused_external_cognition.py": [
+      "scripts/run_adapted_readouts_focused.py",
+      "src/fm_matrix/data.py",
+      "src/paper_paired_stats.py"
+    ],
+    "scripts/summarize_readout_training_cv.py": [
+      "scripts/run_adapted_readouts.py",
+      "src/fm_matrix/data.py"
+    ],
+    "scripts/transfer_baseline.py": [
+      "src/baselines/fc_features.py",
+      "src/cohorts.py",
+      "src/paths.py"
+    ],
+    "scripts/transfer_calibration.py": [
+      "scripts/benchmark_extension.py",
+      "scripts/confirm_matched_axis.py",
+      "scripts/mci_axis_transfer.py",
+      "scripts/probe_readouts.py",
+      "scripts/rct_positive_control.py",
+      "scripts/rct_probe.py",
+      "scripts/run_external_preliminary.py",
+      "src/benchmark_evaluation.py",
+      "src/benchmark_gpu_phase.py",
+      "src/cohorts.py",
+      "src/datasets.py",
+      "src/model_loader.py",
+      "src/paths.py"
+    ],
+    "scripts/verify_release.py": [],
+    "src/__init__.py": [],
+    "src/adni_finetune.py": [
+      "src/brainlm_mae/configuration_brainlm.py",
+      "src/brainlm_mae/modeling_brainlm.py",
+      "src/classifiers.py",
+      "src/config.py"
+    ],
+    "src/adni_folds.py": [],
+    "src/baselines/__init__.py": [],
+    "src/baselines/fc_features.py": [],
+    "src/benchmark_completion_tasks.py": [
+      "scripts/transfer_baseline.py",
+      "src/benchmark_evaluation.py",
+      "src/fm_matched_v3/probes.py",
+      "src/fm_matrix/data.py",
+      "src/fm_readout_v4/data.py",
+      "src/fm_readout_v4/evaluate.py",
+      "src/new_fm/data.py",
+      "src/paper_paired_stats.py",
+      "src/paper_task_expansion.py",
+      "src/sf100_benchmark.py",
+      "src/unified_supplements.py"
+    ],
+    "src/benchmark_evaluation.py": [],
+    "src/benchmark_gap_tasks.py": [
+      "scripts/transfer_baseline.py",
+      "src/benchmark_evaluation.py",
+      "src/fm_matched_v3/__init__.py",
+      "src/fm_matched_v3/physiology.py",
+      "src/fm_matched_v3/probes.py",
+      "src/fm_matrix/data.py",
+      "src/fm_matrix/train.py",
+      "src/fm_readout_v4/data.py",
+      "src/fm_readout_v4/evaluate.py",
+      "src/fm_readout_v4/models.py",
+      "src/fmrilm_variants/runtime.py",
+      "src/model_input_protocol.py",
+      "src/paper_completion.py",
+      "src/paper_paired_stats.py",
+      "src/paper_task_expansion.py",
+      "src/readout_sensitivity.py",
+      "src/sf100_benchmark.py",
+      "src/unified_supplements.py"
+    ],
+    "src/benchmark_gpu_lock.py": [],
+    "src/benchmark_gpu_phase.py": [],
+    "src/braingfm.py": [
+      "src/vendor/braingfm/BrainGFM_Gprompt.py",
+      "src/vendor/braingfm/__init__.py"
+    ],
+    "src/brainharmonix/__init__.py": [],
+    "src/brainharmonix/data.py": [
+      "src/fm_matrix/data.py",
+      "src/new_fm/data.py"
+    ],
+    "src/brainharmonix/evaluate.py": [
+      "scripts/intervention_prepost.py",
+      "scripts/run_sf100_loso.py",
+      "src/benchmark_evaluation.py",
+      "src/brainharmonix/data.py",
+      "src/brainharmonix/extract.py",
+      "src/demographic_benchmark.py",
+      "src/embedding_harmonization.py",
+      "src/fm_matched_v3/probes.py",
+      "src/fm_readout_v4/evaluate.py",
+      "src/paper_completion.py",
+      "src/readout_sensitivity.py",
+      "src/sample_alignment.py",
+      "src/sf100_benchmark.py"
+    ],
+    "src/brainharmonix/extract.py": [
+      "src/brainharmonix/data.py",
+      "src/brainharmonix/models.py",
+      "src/brainharmonix/train.py",
+      "src/fm_matrix/train.py",
+      "src/fm_readout_v4/evaluate.py"
+    ],
+    "src/brainharmonix/models.py": [
+      "src/brainharmonix/data.py",
+      "src/fm_matrix/models.py"
+    ],
+    "src/brainharmonix/physiology.py": [
+      "src/benchmark_gap_tasks.py",
+      "src/brainharmonix/data.py",
+      "src/brainharmonix/evaluate.py",
+      "src/brainharmonix/extract.py",
+      "src/brainharmonix/models.py",
+      "src/brainharmonix/report.py",
+      "src/brainharmonix/train.py",
+      "src/fm_matched_v3/__init__.py",
+      "src/fm_matched_v3/physiology.py",
+      "src/fm_matrix/train.py",
+      "src/paper_paired_stats.py",
+      "src/readout_sensitivity.py"
+    ],
+    "src/brainharmonix/references.py": [
+      "scripts/transfer_baseline.py",
+      "src/benchmark_evaluation.py",
+      "src/fm_matched_v3/probes.py",
+      "src/fm_matrix/data.py",
+      "src/fm_readout_v4/data.py",
+      "src/fm_readout_v4/evaluate.py",
+      "src/paper_completion.py",
+      "src/paper_task_expansion.py",
+      "src/sf100_benchmark.py",
+      "src/unified_supplements.py"
+    ],
+    "src/brainharmonix/report.py": [
+      "scripts/intervention_prepost.py",
+      "scripts/intervention_prepost_inference.py",
+      "src/benchmark_evaluation.py",
+      "src/brainharmonix/data.py",
+      "src/brainharmonix/evaluate.py",
+      "src/brainharmonix/train.py",
+      "src/demographic_benchmark.py",
+      "src/embedding_harmonization.py",
+      "src/paper_paired_stats.py",
+      "src/readout_sensitivity.py"
+    ],
+    "src/brainharmonix/sensitivity.py": [
+      "src/benchmark_evaluation.py",
+      "src/brainharmonix/data.py",
+      "src/brainharmonix/extract.py",
+      "src/brainharmonix/models.py",
+      "src/fm_matrix/train.py",
+      "src/paper_completion.py",
+      "src/paper_paired_stats.py",
+      "src/paper_robustness.py",
+      "src/sample_alignment.py"
+    ],
+    "src/brainharmonix/tasks.py": [
+      "scripts/joint_inference.py",
+      "scripts/transfer_baseline.py",
+      "src/benchmark_completion_tasks.py",
+      "src/brainharmonix/__init__.py",
+      "src/brainharmonix/data.py",
+      "src/brainharmonix/extract.py",
+      "src/brainharmonix/models.py",
+      "src/brainharmonix/physiology.py",
+      "src/brainharmonix/references.py",
+      "src/brainharmonix/report.py",
+      "src/paper_paired_stats.py",
+      "src/readout_sensitivity.py",
+      "src/reviewer_completion_tasks.py",
+      "src/sf100_benchmark.py",
+      "src/unified_supplements.py"
+    ],
+    "src/brainharmonix/train.py": [
+      "src/brainharmonix/data.py",
+      "src/brainharmonix/models.py",
+      "src/fm_matrix/__init__.py",
+      "src/fm_matrix/train.py"
+    ],
+    "src/brainjepa.py": [
+      "src/brainjepa_official/helper.py"
+    ],
+    "src/brainjepa_official/__init__.py": [],
+    "src/brainjepa_official/downstream/__init__.py": [],
+    "src/brainjepa_official/downstream/models_vit.py": [
+      "src/brainjepa_official/helper.py"
+    ],
+    "src/brainjepa_official/helper.py": [
+      "src/brainjepa_official/models/vision_transformer.py",
+      "src/brainjepa_official/utils/schedulers.py",
+      "src/brainjepa_official/utils/tensors.py"
+    ],
+    "src/brainjepa_official/masks/__init__.py": [],
+    "src/brainjepa_official/masks/utils.py": [],
+    "src/brainjepa_official/models/__init__.py": [],
+    "src/brainjepa_official/models/vision_transformer.py": [
+      "src/brainjepa_official/masks/utils.py",
+      "src/brainjepa_official/utils/tensors.py"
+    ],
+    "src/brainjepa_official/utils/__init__.py": [],
+    "src/brainjepa_official/utils/schedulers.py": [],
+    "src/brainjepa_official/utils/tensors.py": [],
+    "src/brainlm_input.py": [],
+    "src/brainlm_mae/__init__.py": [],
+    "src/brainlm_mae/configuration_brainlm.py": [],
+    "src/brainlm_mae/fast_attention.py": [],
+    "src/brainlm_mae/modeling_brainlm.py": [],
+    "src/brainlm_mae/modeling_vit_mae_with_padding.py": [],
+    "src/checkpoint_selection.py": [],
+    "src/classifiers.py": [
+      "src/config.py"
+    ],
+    "src/cohorts.py": [
+      "src/datasets.py",
+      "src/paths.py",
+      "src/temporal.py"
+    ],
+    "src/config.py": [
+      "src/brainlm_mae/fast_attention.py"
+    ],
+    "src/datasets.py": [
+      "src/temporal.py"
+    ],
+    "src/demographic_benchmark.py": [
+      "src/benchmark_evaluation.py",
+      "src/fm_matrix/data.py",
+      "src/fm_matrix/evaluate.py",
+      "src/fm_matrix/train.py",
+      "src/fm_readout_v4/__init__.py",
+      "src/fm_readout_v4/evaluate.py",
+      "src/fm_readout_v4/models.py"
+    ],
+    "src/diagnosis_posttraining.py": [
+      "scripts/materialize_diagnosis_encoder.py",
+      "src/fm_matrix/data.py",
+      "src/fm_matrix/models.py",
+      "src/fm_matrix/train.py"
+    ],
+    "src/ecg_frozen_no_usable.py": [
+      "scripts/transfer_baseline.py",
+      "src/benchmark_evaluation.py",
+      "src/fm_matched_v3/__init__.py",
+      "src/fm_matched_v3/data.py",
+      "src/fm_matched_v3/physiology.py",
+      "src/fm_matched_v3/supplement.py",
+      "src/fm_matrix/models.py",
+      "src/paper_paired_stats.py"
+    ],
+    "src/embedding_harmonization.py": [
+      "src/benchmark_evaluation.py",
+      "src/fm_matrix/data.py",
+      "src/fm_readout_v4/data.py",
+      "src/paper_completion.py",
+      "src/paper_paired_stats.py",
+      "src/sample_alignment.py",
+      "src/sf100_benchmark.py"
+    ],
+    "src/fm_cls_v5/__init__.py": [],
+    "src/fm_cls_v5/data.py": [
+      "src/fm_matrix/__init__.py",
+      "src/fm_matrix/data.py",
+      "src/fm_readout_v4/data.py"
+    ],
+    "src/fm_cls_v5/evaluate.py": [
+      "scripts/transfer_baseline.py",
+      "src/benchmark_evaluation.py",
+      "src/fm_cls_v5/data.py",
+      "src/fm_cls_v5/models.py",
+      "src/fm_cls_v5/train.py",
+      "src/fm_matched_v3/probes.py",
+      "src/fm_matrix/__init__.py",
+      "src/fm_matrix/data.py",
+      "src/fm_matrix/evaluate.py",
+      "src/fm_matrix/train.py"
+    ],
+    "src/fm_cls_v5/models.py": [
+      "src/fm_readout_v4/models.py"
+    ],
+    "src/fm_cls_v5/report.py": [
+      "src/benchmark_evaluation.py",
+      "src/fm_cls_v5/data.py",
+      "src/fm_cls_v5/evaluate.py",
+      "src/fm_cls_v5/train.py"
+    ],
+    "src/fm_cls_v5/supplement.py": [
+      "scripts/transfer_baseline.py",
+      "scripts/transfer_calibration.py",
+      "src/benchmark_evaluation.py",
+      "src/fm_cls_v5/data.py",
+      "src/fm_cls_v5/evaluate.py",
+      "src/fm_cls_v5/models.py",
+      "src/fm_matched_v3/probes.py",
+      "src/thirdorder.py"
+    ],
+    "src/fm_cls_v5/train.py": [
+      "src/benchmark_evaluation.py",
+      "src/fm_cls_v5/data.py",
+      "src/fm_cls_v5/models.py",
+      "src/fm_matrix/data.py"
+    ],
+    "src/fm_matched_v3/__init__.py": [],
+    "src/fm_matched_v3/data.py": [
+      "src/fm_matrix/__init__.py",
+      "src/fm_matrix/data.py"
+    ],
+    "src/fm_matched_v3/diagnosis.py": [
+      "src/fm_matched_v3/data.py",
+      "src/fm_matched_v3/models.py",
+      "src/fm_matched_v3/train.py"
+    ],
+    "src/fm_matched_v3/evaluate.py": [
+      "scripts/transfer_baseline.py",
+      "src/benchmark_evaluation.py",
+      "src/fm_matched_v3/data.py",
+      "src/fm_matched_v3/models.py",
+      "src/fm_matched_v3/probes.py",
+      "src/fm_matched_v3/train.py",
+      "src/fm_matrix/__init__.py",
+      "src/fm_matrix/data.py",
+      "src/fm_matrix/evaluate.py",
+      "src/fm_matrix/train.py"
+    ],
+    "src/fm_matched_v3/intervention_physiology.py": [
+      "scripts/hrv_ppg_benchmark.py",
+      "scripts/rct_inscanner_patch_hr.py",
+      "src/benchmark_evaluation.py",
+      "src/fm_matched_v3/data.py",
+      "src/fm_matched_v3/evaluate.py",
+      "src/fm_matched_v3/supplement.py",
+      "src/fm_matrix/evaluate.py"
+    ],
+    "src/fm_matched_v3/models.py": [
+      "src/fm_matrix/models.py"
+    ],
+    "src/fm_matched_v3/physiology.py": [
+      "scripts/confirm_matched_axis.py",
+      "scripts/hrv_ppg_benchmark.py",
+      "scripts/transfer_baseline.py",
+      "src/benchmark_evaluation.py",
+      "src/fm_matched_v3/data.py",
+      "src/fm_matched_v3/evaluate.py",
+      "src/fm_matched_v3/models.py",
+      "src/fm_matched_v3/supplement.py",
+      "src/fm_matched_v3/train.py",
+      "src/model_input_protocol.py"
+    ],
+    "src/fm_matched_v3/probes.py": [
+      "src/benchmark_evaluation.py",
+      "src/thirdorder.py"
+    ],
+    "src/fm_matched_v3/supplement.py": [
+      "scripts/transfer_baseline.py",
+      "scripts/transfer_calibration.py",
+      "src/benchmark_evaluation.py",
+      "src/fm_matched_v3/data.py",
+      "src/fm_matched_v3/evaluate.py",
+      "src/fm_matched_v3/models.py",
+      "src/fm_matched_v3/probes.py",
+      "src/fm_matched_v3/train.py",
+      "src/fm_matrix/__init__.py",
+      "src/fm_matrix/data.py",
+      "src/fm_matrix/train.py",
+      "src/model_input_protocol.py",
+      "src/thirdorder.py"
+    ],
+    "src/fm_matched_v3/train.py": [
+      "src/benchmark_evaluation.py",
+      "src/fm_matched_v3/data.py",
+      "src/fm_matched_v3/models.py"
+    ],
+    "src/fm_matrix/__init__.py": [],
+    "src/fm_matrix/data.py": [
+      "scripts/rct_positive_control.py",
+      "src/benchmark_evaluation.py",
+      "src/cohorts.py",
+      "src/model_input_protocol.py",
+      "src/roi_signal_qc.py"
+    ],
+    "src/fm_matrix/evaluate.py": [
+      "scripts/hrv_ppg_benchmark.py",
+      "scripts/rct_inscanner_patch_hr.py",
+      "scripts/transfer_baseline.py",
+      "src/benchmark_evaluation.py",
+      "src/fm_matrix/data.py",
+      "src/fm_matrix/models.py",
+      "src/fm_matrix/train.py",
+      "src/model_input_protocol.py"
+    ],
+    "src/fm_matrix/models.py": [
+      "src/brainjepa.py",
+      "src/brainjepa_official/models/vision_transformer.py",
+      "src/brainlm_input.py",
+      "src/config.py",
+      "src/datasets.py",
+      "src/model_loader.py",
+      "src/paths.py",
+      "src/vitmae_input.py"
+    ],
+    "src/fm_matrix/train.py": [
+      "src/benchmark_evaluation.py",
+      "src/fm_matrix/data.py",
+      "src/fm_matrix/models.py"
+    ],
+    "src/fm_readout_v4/__init__.py": [],
+    "src/fm_readout_v4/data.py": [
+      "src/fm_matched_v3/data.py"
+    ],
+    "src/fm_readout_v4/evaluate.py": [
+      "scripts/transfer_baseline.py",
+      "src/benchmark_evaluation.py",
+      "src/fm_matched_v3/probes.py",
+      "src/fm_matrix/__init__.py",
+      "src/fm_matrix/data.py",
+      "src/fm_matrix/evaluate.py",
+      "src/fm_matrix/train.py",
+      "src/fm_readout_v4/data.py",
+      "src/fm_readout_v4/models.py"
+    ],
+    "src/fm_readout_v4/models.py": [
+      "src/fm_matrix/models.py"
+    ],
+    "src/fm_readout_v4/supplement.py": [
+      "scripts/transfer_baseline.py",
+      "scripts/transfer_calibration.py",
+      "src/benchmark_evaluation.py",
+      "src/fm_matched_v3/probes.py",
+      "src/fm_readout_v4/data.py",
+      "src/fm_readout_v4/evaluate.py",
+      "src/fm_readout_v4/models.py",
+      "src/thirdorder.py"
+    ],
+    "src/fmrilm.py": [],
+    "src/fmrilm_variants/__init__.py": [],
+    "src/fmrilm_variants/models.py": [
+      "src/fm_matrix/models.py",
+      "src/new_fm/models.py"
+    ],
+    "src/fmrilm_variants/runtime.py": [
+      "src/fm_matrix/data.py",
+      "src/fmrilm_variants/models.py"
+    ],
+    "src/model_input_protocol.py": [
+      "src/roi_signal_qc.py"
+    ],
+    "src/model_loader.py": [
+      "src/brainlm_mae/configuration_brainlm.py",
+      "src/brainlm_mae/modeling_brainlm.py",
+      "src/config.py"
+    ],
+    "src/motion_covariates.py": [],
+    "src/new_fm/__init__.py": [],
+    "src/new_fm/data.py": [
+      "src/cohorts.py",
+      "src/fm_matrix/data.py",
+      "src/fm_readout_v4/data.py",
+      "src/temporal.py"
+    ],
+    "src/new_fm/evaluate.py": [
+      "scripts/intervention_prepost.py",
+      "scripts/run_sf100_loso.py",
+      "src/benchmark_evaluation.py",
+      "src/demographic_benchmark.py",
+      "src/embedding_harmonization.py",
+      "src/fm_matched_v3/probes.py",
+      "src/fm_readout_v4/evaluate.py",
+      "src/new_fm/data.py",
+      "src/new_fm/extract.py",
+      "src/paper_completion.py",
+      "src/readout_sensitivity.py",
+      "src/sample_alignment.py",
+      "src/sf100_benchmark.py"
+    ],
+    "src/new_fm/extract.py": [
+      "src/fm_matrix/train.py",
+      "src/fm_readout_v4/evaluate.py",
+      "src/new_fm/data.py",
+      "src/new_fm/models.py",
+      "src/new_fm/train.py"
+    ],
+    "src/new_fm/models.py": [
+      "src/fm_matrix/models.py",
+      "src/new_fm/data.py"
+    ],
+    "src/new_fm/physiology.py": [
+      "src/fm_matched_v3/__init__.py",
+      "src/fm_matched_v3/physiology.py",
+      "src/fm_matrix/train.py",
+      "src/new_fm/data.py",
+      "src/new_fm/evaluate.py",
+      "src/new_fm/extract.py",
+      "src/new_fm/models.py",
+      "src/new_fm/report.py",
+      "src/new_fm/train.py",
+      "src/paper_paired_stats.py",
+      "src/readout_sensitivity.py"
+    ],
+    "src/new_fm/report.py": [
+      "scripts/intervention_prepost.py",
+      "scripts/intervention_prepost_inference.py",
+      "src/benchmark_evaluation.py",
+      "src/demographic_benchmark.py",
+      "src/embedding_harmonization.py",
+      "src/new_fm/data.py",
+      "src/new_fm/evaluate.py",
+      "src/new_fm/train.py",
+      "src/paper_paired_stats.py",
+      "src/readout_sensitivity.py"
+    ],
+    "src/new_fm/sensitivity.py": [
+      "src/benchmark_evaluation.py",
+      "src/fm_matrix/train.py",
+      "src/new_fm/data.py",
+      "src/new_fm/extract.py",
+      "src/new_fm/models.py",
+      "src/paper_completion.py",
+      "src/paper_paired_stats.py",
+      "src/paper_robustness.py",
+      "src/sample_alignment.py"
+    ],
+    "src/new_fm/train.py": [
+      "src/fm_matrix/__init__.py",
+      "src/fm_matrix/train.py",
+      "src/new_fm/data.py",
+      "src/new_fm/models.py"
+    ],
+    "src/paper_completion.py": [
+      "scripts/transfer_baseline.py",
+      "src/benchmark_evaluation.py",
+      "src/fm_matched_v3/probes.py",
+      "src/fm_matrix/data.py",
+      "src/fm_readout_v4/data.py",
+      "src/fm_readout_v4/evaluate.py",
+      "src/paper_paired_stats.py"
+    ],
+    "src/paper_paired_stats.py": [],
+    "src/paper_robustness.py": [
+      "scripts/transfer_baseline.py",
+      "src/benchmark_evaluation.py",
+      "src/fm_matrix/data.py",
+      "src/fm_matrix/train.py",
+      "src/fm_readout_v4/data.py",
+      "src/fm_readout_v4/models.py",
+      "src/paper_completion.py",
+      "src/paper_paired_stats.py",
+      "src/temporal.py"
+    ],
+    "src/paper_task_expansion.py": [
+      "src/benchmark_evaluation.py",
+      "src/fm_matrix/data.py",
+      "src/fm_readout_v4/data.py",
+      "src/fm_readout_v4/supplement.py",
+      "src/paper_completion.py",
+      "src/paper_paired_stats.py",
+      "src/readout_sensitivity.py",
+      "src/sample_alignment.py",
+      "src/sf100_benchmark.py"
+    ],
+    "src/paths.py": [
+      "src/temporal.py"
+    ],
+    "src/physiology_benchmark.py": [
+      "scripts/confirm_matched_axis.py",
+      "scripts/hrv_ppg_benchmark.py",
+      "scripts/transfer_baseline.py",
+      "src/benchmark_evaluation.py",
+      "src/fm_matrix/data.py",
+      "src/fm_matrix/evaluate.py",
+      "src/fm_matrix/models.py",
+      "src/fm_matrix/train.py",
+      "src/model_input_protocol.py"
+    ],
+    "src/protocol.py": [
+      "src/config.py"
+    ],
+    "src/qc.py": [],
+    "src/readout_control_encoders.py": [
+      "scripts/run_connectivity_readouts.py",
+      "scripts/run_identity_controls.py",
+      "src/brainharmonix/data.py",
+      "src/brainharmonix/models.py",
+      "src/brainjepa.py",
+      "src/brainlm_input.py",
+      "src/brainlm_mae/modeling_vit_mae_with_padding.py",
+      "src/fm_matrix/models.py",
+      "src/fm_readout_v4/data.py",
+      "src/fmrilm_variants/models.py",
+      "src/new_fm/data.py",
+      "src/new_fm/models.py",
+      "src/paths.py",
+      "src/vitmae_input.py"
+    ],
+    "src/readout_sensitivity.py": [
+      "src/benchmark_evaluation.py",
+      "src/brainjepa.py",
+      "src/fm_matrix/data.py",
+      "src/fm_matrix/train.py",
+      "src/fm_readout_v4/data.py",
+      "src/fm_readout_v4/models.py",
+      "src/paper_completion.py",
+      "src/paper_paired_stats.py"
+    ],
+    "src/reviewer_completion_tasks.py": [
+      "scripts/intervention_prepost.py",
+      "scripts/intervention_prepost_inference.py",
+      "scripts/joint_inference.py",
+      "scripts/transfer_baseline.py",
+      "src/benchmark_completion_tasks.py",
+      "src/benchmark_evaluation.py",
+      "src/fm_matched_v3/probes.py",
+      "src/fm_matrix/data.py",
+      "src/fm_readout_v4/data.py",
+      "src/new_fm/data.py",
+      "src/paper_paired_stats.py",
+      "src/paper_robustness.py",
+      "src/paper_task_expansion.py",
+      "src/readout_sensitivity.py",
+      "src/sample_alignment.py",
+      "src/sf100_benchmark.py",
+      "src/unified_supplements.py"
+    ],
+    "src/roi_signal_qc.py": [],
+    "src/sample_alignment.py": [
+      "src/benchmark_evaluation.py",
+      "src/demographic_benchmark.py",
+      "src/fm_matched_v3/__init__.py",
+      "src/fm_matched_v3/evaluate.py",
+      "src/fm_matched_v3/probes.py",
+      "src/fm_matrix/data.py",
+      "src/fm_readout_v4/__init__.py",
+      "src/fm_readout_v4/data.py",
+      "src/fm_readout_v4/supplement.py",
+      "src/paper_completion.py",
+      "src/paper_robustness.py",
+      "src/readout_sensitivity.py",
+      "src/sf100_benchmark.py"
+    ],
+    "src/sf100_benchmark.py": [
+      "src/benchmark_evaluation.py",
+      "src/braingfm.py",
+      "src/fm_matrix/data.py",
+      "src/fm_readout_v4/data.py",
+      "src/paper_completion.py",
+      "src/paper_paired_stats.py",
+      "src/paper_robustness.py",
+      "src/readout_sensitivity.py"
+    ],
+    "src/temporal.py": [],
+    "src/thirdorder.py": [],
+    "src/unified_supplements.py": [
+      "src/benchmark_evaluation.py",
+      "src/fm_matrix/data.py",
+      "src/fm_readout_v4/data.py",
+      "src/fm_readout_v4/evaluate.py",
+      "src/fm_readout_v4/supplement.py",
+      "src/paper_completion.py",
+      "src/paper_task_expansion.py",
+      "src/readout_sensitivity.py",
+      "src/sample_alignment.py",
+      "src/sf100_benchmark.py"
+    ],
+    "src/vendor/__init__.py": [],
+    "src/vendor/braingfm/BrainGFM_Gprompt.py": [
+      "src/vendor/braingfm/disease_names.py",
+      "src/vendor/braingfm/graph_prompt.py"
+    ],
+    "src/vendor/braingfm/__init__.py": [],
+    "src/vendor/braingfm/disease_names.py": [],
+    "src/vendor/braingfm/graph_prompt.py": [],
+    "src/vitmae_input.py": [
+      "src/brainlm_mae/modeling_vit_mae_with_padding.py"
+    ],
+    "tests/test_adapted_readouts.py": [
+      "src/readout_sensitivity.py"
+    ],
+    "tests/test_adapted_readouts_focused.py": [
+      "scripts/run_adapted_readouts_focused.py"
+    ],
+    "tests/test_benchmark_evaluation.py": [
+      "scripts/confirm_matched_axis.py",
+      "scripts/rct_probe.py",
+      "src/benchmark_evaluation.py",
+      "src/thirdorder.py"
+    ],
+    "tests/test_checkpoint_selection.py": [
+      "src/checkpoint_selection.py"
+    ],
+    "tests/test_connectivity_readouts.py": [
+      "src/paper_completion.py"
+    ],
+    "tests/test_diagnosis_posttraining.py": [
+      "scripts/run_diagnosis_posttraining.py",
+      "src/diagnosis_posttraining.py"
+    ],
+    "tests/test_embedding_harmonization.py": [
+      "src/embedding_harmonization.py"
+    ],
+    "tests/test_evidence_nulls.py": [
+      "scripts/run_evidence_nulls.py"
+    ],
+    "tests/test_external_preliminary.py": [
+      "scripts/run_external_preliminary.py"
+    ],
+    "tests/test_intervention_alignment.py": [
+      "scripts/run_intervention_alignment.py"
+    ],
+    "tests/test_intervention_input_length.py": [
+      "scripts/run_intervention_input_length.py"
+    ],
+    "tests/test_intervention_prepost.py": [
+      "scripts/intervention_prepost.py"
+    ],
+    "tests/test_intervention_prepost_inference.py": [
+      "scripts/intervention_prepost.py",
+      "scripts/intervention_prepost_inference.py"
+    ],
+    "tests/test_intervention_readouts.py": [
+      "scripts/run_intervention_readouts.py"
+    ],
+    "tests/test_matched_supplement.py": [
+      "scripts/transfer_calibration.py",
+      "src/fm_matched_v3/__init__.py",
+      "src/fm_matched_v3/supplement.py"
+    ],
+    "tests/test_matched_v3.py": [
+      "scripts/prepare_hrv_memory.py",
+      "src/fm_matched_v3/data.py",
+      "src/fm_matched_v3/evaluate.py",
+      "src/fm_matched_v3/models.py",
+      "src/fm_matched_v3/probes.py"
+    ],
+    "tests/test_model_input_protocol.py": [
+      "src/model_input_protocol.py"
+    ],
+    "tests/test_motion_covariates.py": [
+      "src/motion_covariates.py"
+    ],
+    "tests/test_nacc_uds.py": [
+      "scripts/prepare_nacc_uds.py"
+    ],
+    "tests/test_new_fm_physiology.py": [
+      "scripts/run_new_fm_physiology.py",
+      "src/new_fm/physiology.py"
+    ],
+    "tests/test_nine_model_identity_controls.py": [
+      "scripts/run_nine_model_identity_controls.py"
+    ],
+    "tests/test_paper_completion.py": [
+      "src/paper_completion.py",
+      "src/paper_paired_stats.py"
+    ],
+    "tests/test_paper_robustness.py": [
+      "src/paper_robustness.py"
+    ],
+    "tests/test_posttraining_pca_sensitivity.py": [],
+    "tests/test_readout_completion.py": [
+      "scripts/run_readout_completion.py",
+      "src/fm_matrix/evaluate.py"
+    ],
+    "tests/test_readout_selection_and_temporal_controls.py": [
+      "scripts/run_nested_readout_selection.py",
+      "scripts/run_temporal_order_controls.py"
+    ],
+    "tests/test_readout_sensitivity.py": [
+      "src/readout_sensitivity.py"
+    ],
+    "tests/test_readout_task_extension.py": [
+      "scripts/run_readout_task_extension.py",
+      "src/benchmark_evaluation.py",
+      "src/paper_completion.py"
+    ],
+    "tests/test_reviewer_completion.py": [
+      "scripts/transfer_baseline.py",
+      "src/benchmark_completion_tasks.py",
+      "src/reviewer_completion_tasks.py"
+    ],
+    "tests/test_sample_alignment.py": [
+      "src/benchmark_evaluation.py",
+      "src/readout_sensitivity.py",
+      "src/sample_alignment.py"
+    ],
+    "tests/test_sf100_benchmark.py": [
+      "src/paper_paired_stats.py",
+      "src/sf100_benchmark.py"
+    ],
+    "tests/test_sf100_loso.py": [
+      "scripts/run_sf100_loso.py"
+    ],
+    "tests/test_six_model_inference.py": [
+      "scripts/joint_inference.py"
+    ],
+    "tests/test_sparse_roi_qc.py": [
+      "src/baselines/fc_features.py",
+      "src/model_input_protocol.py",
+      "src/roi_signal_qc.py"
+    ],
+    "tests/test_unified_supplements.py": [
+      "src/readout_sensitivity.py",
+      "src/unified_supplements.py"
+    ]
+  },
+  "note": "Local static import graph; complete upstream packages are retained for dynamic encoder imports. Optional private-data/checkpoint paths are not distributed.",
+  "distribution": "code_only"
+}

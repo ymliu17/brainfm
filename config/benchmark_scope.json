@@ -1,0 +1,77 @@
+{
+  "snapshot": "2026-11-05",
+  "cohorts": [
+    "adni",
+    "nacc",
+    "act",
+    "cogte",
+    "breathe",
+    "psopt",
+    "hrv"
+  ],
+  "configurations": [
+    "brainlm_13m",
+    "brainlm_111m",
+    "brainlm_650m",
+    "brainjepa",
+    "semantoks",
+    "fmrilm_vq_contrastive",
+    "fmrilm_mae",
+    "fmrilm_vq_domain",
+    "brainharmonix_f"
+  ],
+  "post_training_sources": [
+    "adni",
+    "nacc"
+  ],
+  "objectives": [
+    "MEM",
+    "EF",
+    "native_ssl"
+  ],
+  "primary_readout": "model-specific final-layer readout, held fixed before/after adaptation",
+  "statistical_budgets": {
+    "refitted_label_permutations": 1999,
+    "paired_prediction_swaps": 20000,
+    "participant_bootstraps": 5000
+  },
+  "scope_authority": "reproducibility/EXPERIMENTS.md and CURRENT_PROTOCOLS.md; numerical results are stored separately",
+  "participants": 1653,
+  "scans": 3103,
+  "supplementary_controls": [
+    "nine_configuration_random_initialization",
+    "temporal_order",
+    "regional_SD",
+    "seven_cohort_FD_adjustment",
+    "scan_level_FD_prediction",
+    "training_selected_readout"
+  ],
+  "HRV_delayed_recall_PCA": {
+    "primary_cap": 5,
+    "sensitivity_caps": [
+      5,
+      10,
+      20
+    ],
+    "historical_cap": 100
+  },
+  "main_figures": [
+    2,
+    3,
+    4
+  ],
+  "supplementary_figures": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "distribution": "code_only"
+}

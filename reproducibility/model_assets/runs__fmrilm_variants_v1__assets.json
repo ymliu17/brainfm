@@ -1,0 +1,33 @@
+{
+  "status": "complete",
+  "files": [
+    {
+      "path": "checkpoints/pretrained/new_fm_v1/fmrilm/mae/stage1-tokenizer.pt",
+      "sha256": "20482494452012e03b2ee20b9db1fcfbf2be3ca8d19a847423eae7178499ef5e",
+      "repository": "stanjsx/fMRI-LM-B-Qwen3-0.6B",
+      "revision": "1f784444e81d5bd5004d78febb1dd99396843a66",
+      "file": "mae/stage1-tokenizer.pt"
+    },
+    {
+      "path": "checkpoints/pretrained/new_fm_v1/fmrilm/mae/stage2-pretrain-Qwen3-0.6B.pt",
+      "sha256": "0df6bdfbbce1084ce8552dfe27d3d9485d03d248be6ce0d26ad62c813e4723f4",
+      "repository": "stanjsx/fMRI-LM-B-Qwen3-0.6B",
+      "revision": "1f784444e81d5bd5004d78febb1dd99396843a66",
+      "file": "mae/stage2-pretrain-Qwen3-0.6B.pt"
+    },
+    {
+      "path": "checkpoints/pretrained/new_fm_v1/fmrilm/vq-domain/stage1-tokenizer.pt",
+      "sha256": "c590535c19e835f216121f78c71578d35bf71347e558c917776501879df15e8c",
+      "repository": "stanjsx/fMRI-LM-B-Qwen3-0.6B",
+      "revision": "1f784444e81d5bd5004d78febb1dd99396843a66",
+      "file": "vq-domain/stage1-tokenizer.pt"
+    },
+    {
+      "path": "checkpoints/pretrained/new_fm_v1/fmrilm/vq-domain/stage2-pretrain-Qwen3-0.6B.pt",
+      "sha256": "542708723fbb4d54e107df503aec8d266534b224f2e46a1213baeac763a99cf5",
+      "repository": "stanjsx/fMRI-LM-B-Qwen3-0.6B",
+      "revision": "1f784444e81d5bd5004d78febb1dd99396843a66",
+      "file": "vq-domain/stage2-pretrain-Qwen3-0.6B.pt"
+    }
+  ]
+}

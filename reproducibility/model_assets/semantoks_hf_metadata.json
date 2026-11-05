@@ -1,0 +1,103 @@
+{
+  "_id": "6934aeb73d5a6342f68e5fa2",
+  "id": "SamGijsen/Brain-Semantoks",
+  "private": false,
+  "tags": [
+    "arxiv:2512.11582",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "downloads": 0,
+  "likes": 0,
+  "modelId": "SamGijsen/Brain-Semantoks",
+  "author": "SamGijsen",
+  "sha": "e7d7bcd8fada4a182204b0d78188ca47bd3f3eb6",
+  "lastModified": "2026-01-09T13:00:24.000Z",
+  "gated": false,
+  "disabled": false,
+  "model-index": null,
+  "config": {},
+  "cardData": {
+    "license": "apache-2.0"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+      "size": 1519
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "b8a75a9b2de4c5325210c6c3ad0e234b09b32cdd",
+      "size": 990
+    },
+    {
+      "rfilename": "brainsemantoks_ckpt_epoch_100.pth",
+      "blobId": "7205290c08575619e790e31aba373be860cf5577",
+      "size": 987216594,
+      "lfs": {
+        "sha256": "460c3078e0712cf5d16e8bb554cc59ab0ea07ff47cbacc63d3ef5bd60bbf5fd2",
+        "size": 987216594,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "config_used.yaml",
+      "blobId": "070db35cb685544ad4d4cf0d81ad5eb68c573e8c",
+      "size": 2065
+    },
+    {
+      "rfilename": "network_mapping.npz",
+      "blobId": "7a3830ee63562ae2f0549627179a80c9b28b1cc0",
+      "size": 7986,
+      "lfs": {
+        "sha256": "5f27241a3600cb1f953c79c810b61fad858517e6266cd43d97d40b84a0f2a807",
+        "size": 7986,
+        "pointerSize": 129
+      }
+    },
+    {
+      "rfilename": "schaefer400_tian50_buckner7_MNI152_2mm.nii.gz",
+      "blobId": "2568938677486060fe6db25600c8fcdc743fb3f6",
+      "size": 135419,
+      "lfs": {
+        "sha256": "deed68fae9087937b3c923c850a864d1f342a8345df383ea739df166afb3eaef",
+        "size": 135419,
+        "pointerSize": 131
+      }
+    },
+    {
+      "rfilename": "second_random_seed/brainsemantoks_ckpt_epoch_100.pth",
+      "blobId": "cd854b6d632253b02554af058d4a91c220b4248b",
+      "size": 987216594,
+      "lfs": {
+        "sha256": "edcb4133cba226673cb3951cca963ee1720a553179c5d06b86cf6542301dab7e",
+        "size": 987216594,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "second_random_seed/config_used.yaml",
+      "blobId": "fb588a4458407870c20b97cf8caa203945774e60",
+      "size": 2065
+    },
+    {
+      "rfilename": "third_random_seed/brainsemantoks_ckpt_epoch_100.pth",
+      "blobId": "07fcae81c0a8b0ddacdacedd167059b0a79f422d",
+      "size": 987216594,
+      "lfs": {
+        "sha256": "d4d0d90642dac178a606afe38efac3b94ae497bbdad6c085de8cebb4ff120c68",
+        "size": 987216594,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "third_random_seed/config_used.yaml",
+      "blobId": "4aab98d3c8edb61c5da5ae2c7625f8922ae9b6db",
+      "size": 2065
+    }
+  ],
+  "spaces": [],
+  "createdAt": "2025-12-06T22:31:19.000Z",
+  "usedStorage": 2961793187
+}
